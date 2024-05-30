@@ -1,5 +1,7 @@
-# gbc-hw
-Game Boy Color - Hardware
+# gbc-census
+
+A census of GBC devices, manually scraped data, over a few years.
+The dataset is biased towards the UK.
 
 ## Acknowledgements
 
