@@ -1,5 +1,5 @@
-Timestamp,Serial number ,Model reference,Board revision,Markings (A-B),Case color,Source
-30-May-2023,CH10038566,C/CGB-JPN-1,02,1-2,Atomic purple,n/a - gbhwdb
+Timestamp,Serial number,Model,PCB #,Panel (A-B),Case color,Source
+30-May-2023,CH10038566,C/CGB-JPN-1,02,1-2,Atomic purple,gbhwdb.gekkio.fi
 14-Aug-2022,CH10191050,C/CGB-JPN-1,02,1-1,Berry,JP eBay
 11-Aug-2022,CH10351165,C/CGB-JPN-1,02,1-2,Teal,JP eBay
 28-Jun-2022,CH10486180,C/CGB-EUR,?,?-?,Grape,UK eBay
@@ -368,12 +368,12 @@ Timestamp,Serial number ,Model reference,Board revision,Markings (A-B),Case colo
 24-Jul-2022,CH20206989,C/CGB-EUR,05,1-2,Kiwi,UK eBay
 24-May-2024,CH20683638,C/CGB-EUR,05,1-2,Dandelion,UK eBay
 15-Apr-2023,CH20799964,C/CGB-JPN-2,05,2-8,Atomic purple,JP eBay
-30-May-2023,CH20811249,C/CGB-JPN-2,05,2-6,Atomic purple,n/a - gbhwdb
+30-May-2023,CH20811249,C/CGB-JPN-2,05,2-6,Atomic purple,gbhwdb.gekkio.fi
 15-Apr-2023,CH20849853,C/CGB-JPN-2,05,1-4,Clear translucent,JP eBay
 26-Jul-2022,CH20877470,C/CGB-JPN-2,05,2-8,Teal,JP eBay
 14-Aug-2022,CH20951737,C/CGB-JPN-2,05,2-8,Atomic purple,JP eBay
 15-Apr-2023,CH20983014,C/CGB-JPN-2,05,2-?,Berry,JP eBay
-30-May-2023,CH20983903,C/CGB-JPN-2,05,2-6,Berry,n/a - gbhwdb
+30-May-2023,CH20983903,C/CGB-JPN-2,05,2-6,Berry,gbhwdb.gekkio.fi
 17-Aug-2022,CH20992530,C/CGB-JPN-2,05,1-7,Berry,JP eBay
 18-Jul-2022,CH21115669,CGB-JPN-1 (Repro?),?,4-1,Atomic purple,UK eBay
 28-Jun-2022,CH21220746,C/CGB-EUR,05,?-?,Grape,UK eBay
@@ -487,8 +487,10 @@ Timestamp,Serial number ,Model reference,Board revision,Markings (A-B),Case colo
 19-Jul-2022,CH24090144,C/CGB-EUR,05,2-2,Teal,UK eBay
 19-Jul-2022,CH24095110,C/CGB-EUR,05,6-2,Teal,UK eBay
 27-Jun-2022,CH24216664,C/CGB-JPN-2,?,?-?,Atomic purple,UK eBay
-30-May-2023,CH24224683,C/CGB-JPN-2,06,1-1,Atomic purple,n/a - gbhwdb
+30-May-2023,CH24224683,C/CGB-JPN-2,06,1-1,Atomic purple,gbhwdb.gekkio.fi
 24-Jul-2022,CH24300997,C/CGB-JPN-2,06,1-1,Clear translucent,UK eBay
 04-Jul-2022,CH24602380,C/CGB-JPN-2,06,5-1,Atomic purple,UK eBay
 30-Jun-2022,CH24642212,C/CGB-JPN-2,06,9-1,Berry,UK eBay
-Copyright (C) Andrew C.E. Dent 2024. Work is licensed under CC BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/
+,,,,,,"Copyright (C) Andrew C.E. Dent 2022-2024."
+,,,,,,"Work is licensed under CC BY-NC-SA"
+,,,,,,"https://creativecommons.org/licenses/by-nc-sa/4.0/"
