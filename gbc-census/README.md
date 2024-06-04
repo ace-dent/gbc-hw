@@ -1,7 +1,7 @@
 # gbc-census
 
-A census of GBC devices, manually scraped data, over a few years.
-The dataset is biased towards the UK.
+A census of GBC devices. This data was manually scraped over a few years.
+Currently the dataset is biased towards the UK.
 
 ## Acknowledgements
 
@@ -9,6 +9,7 @@ Special thanks to @Gekkio.
 
 ## Legal
 
+All trademarks are the property of their respective owners.
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
