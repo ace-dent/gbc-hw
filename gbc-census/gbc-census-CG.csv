@@ -1,4 +1,4 @@
-Timestamp,Serial number,Model,PCB #,Panel (A-B),Case color,Source
+Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 30-May-2023,CG100048933,CGB-JPN,Blank,1-2,💜 Grape,gbhwdb.gekkio.fi
 26-Jul-2022,CG102405987,CGB-JPN,Blank,1-1,💜 Grape,US eBay
 14-Apr-2023,CG10257479?,CGB-JPN-1,"02",1-2,💟 Atomic purple,US eBay
@@ -20,10 +20,14 @@ Timestamp,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 14-Aug-2022,CG528763647,C/CGB-JPN-1,"04",4-1,💟 Atomic purple,UK eBay
 21-May-2023,CG537316971,C/CGB-JPN-1,"05",2-1,💟 Atomic purple,UK eBay
 06-Aug-2022,CG542337398,C/CGB-JPN-1,"04",1-1,💚 Kiwi,UK eBay
+11-Jun-2024,CG549112790,C/CGB-JPN-1,"04",5-2,🩷 Berry,UK eBay
+03-Jun-2024,CG549452421,C/CGB-JPN-1,"04",2-1,💟 Atomic purple,UK eBay
+08-Jun-2024,CG551605921,C/CGB-JPN-1,?,5-?,💟 Atomic purple,UK Vinted
 10-Jul-2022,CG552127118,C/CGB-JPN-1,"04",6-1,💚 Kiwi,UK eBay
 14-May-2024,CG553537831,Missing,"04",6-1,💟 Atomic purple,UK eBay
 30-May-2023,CG554316893,C/CGB-JPN-1,"04",3-1,💚 Kiwi,UK eBay
 21-Jun-2023,CG554538721,C/CGB-JPN-1,"04",2-2,💚 Kiwi,UK eBay
+09-Jun-2024,CG556430641,C/CGB-JPN-1,"04",4-1,💟 Atomic purple,UK eBay
 14-May-2024,CG558340412,C/CGB-JPN-1,"04",1-2,💟 Atomic purple,UK eBay
 02-May-2023,CG565522825,C/CGB-JPN-1,"04",3-2,💚 Kiwi,UK eBay
 25-Apr-2024,CG570138608,C/CGB-JPN-2,"04",4-1,💟 Atomic purple,UK eBay
@@ -35,6 +39,7 @@ Timestamp,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 04-Jul-2022,CG612075007,C/GCB-JPN-2,"06",8-2,💚 Kiwi,UK eBay
 14-Jul-2022,CG613365787,C/CGB-JPN-2,"06",6-1,💟 Atomic purple,UK eBay
 18-Jul-2022,CG613437347,C/CGB-JPN-2,"06",9-2,💟 Atomic purple,UK eBay
-,,,,,,"Copyright (C) Andrew C.E. Dent 2022-2024."
-,,,,,,"Work is licensed under CC BY-NC-SA"
-,,,,,,"https://creativecommons.org/licenses/by-nc-sa/4.0/"
+,,,,,,
+12-Jun-2024,R800,,,,,Copyright (C) Andrew C.E. Dent 2022-2024
+           ,    ,,,,,Work is licensed under CC BY-NC-SA
+           ,    ,,,,,https://creativecommons.org/licenses/by-nc-sa/4.0/
