@@ -15,6 +15,7 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 02-Aug-2022,C10627284,CGB-EUR,Blank,1-1,💟 Atomic purple,UK eBay
 28-Jun-2022,C10656178,CGB-EUR,Blank,1-2,💜 Grape,UK eBay
 27-May-2023,C10659438,CGB-EUR,Blank,1-2,💜 Grape,UK eBay
+20-Jun-2024,C10680217,CGB-EUR,Blank,4-1,💜 Grape,UK eBay
 22-Apr-2023,C10684498,CGB-EUR,Blank,1-2,💜 Grape,UK eBay
 06-Jun-2024,C10688719,Missing,Blank,2-2,💜 Grape,UK eBay
 30-Jun-2022,C10689236,CGB-EUR,Blank,1-1,💜 Grape,UK eBay
@@ -76,7 +77,9 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 09-Aug-2022,C12043213,CGB-JPN-1,"04",4-2,💜 Grape,UK eBay
 31-Jul-2022,C12095135,CGB-EUR,"02",1-2,💟 Atomic purple,UK eBay
 27-Jun-2022,C12170549,CGB-JPN-1,?,?-?,🩵 Teal,UK eBay
+20-Jun-2024,C12553874,CGB-JPN-1,"02",1-1,SE Hello Kitty,UK eBay
 11-Aug-2022,C12650783,CGB-JPN-1,"03",1-2,💛 Dandelion,JP eBay
+18-Jun-2024,C12693031,Missing,03?,6-1,🩵 Teal,UK eBay
 14-Aug-2022,C12728143,CGB-JPN-1,"03",1-1,💛 Dandelion,JP eBay
 17-Aug-2022,C12762455,CGB-JPN-1,"03",3-1,💟 Atomic purple,JP eBay
 17-Aug-2022,C12816406,CGB-JPN-1,"03",1-1,💟 Atomic purple,JP eBay
@@ -122,6 +125,7 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 11-Jun-2024,C15220564,CGB-EUR,"03",3-2,🩷 Berry,UK eBay
 25-Jul-2022,C15228810,CGB-EUR,"03",1-1,🩷 Berry,UK eBay
 30-Jun-2022,C15229979,CGB-EUR,"03",2-1,🩷 Berry,UK eBay
+27-Jun-2024,C15252542,CGB-EUR,"03",8-1,🩵 Teal,UK eBay
 27-May-2023,C15256216,CGB-EUR,"03",10-2,🩵 Teal,UK eBay
 14-Aug-2022,C15264886,CGB-EUR,"03",1-2,💚 Kiwi,UK eBay
 22-Apr-2024,C15281693,CGB-EUR,"03",1-1,💛 Dandelion,UK eBay
@@ -164,6 +168,7 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 15-Apr-2023,C18179582,CGB-JPN-1,"04",1-1,💟 Atomic purple,JP eBay
 15-Apr-2023,C18202605,CGB-JPN-1,"04",1-2,💛 Dandelion,JP eBay
 17-Aug-2022,C18208385,CGB-JPN-1,"04",1-2,💛 Dandelion,JP eBay
+30-Jun-2024,C18329197,CGB-JPN-1,"04",6-1,💛 Dandelion,UK eBay
 05-Jul-2022,C18381385,CGB-JPN-1,?,2-2,🩵 Teal,UK eBay
 17-Aug-2022,C18435440,CGB-JPN-1,"04",2-1,💛 Dandelion,JP eBay
 15-Apr-2023,C18482173,CGB-JPN-1,"04",1-2,💜 Grape,JP eBay
@@ -185,6 +190,7 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 15-Apr-2023,C19082412,CGB-JPN-1,"04",1-2,💟 Atomic purple,JP eBay
 15-Apr-2023,C19082583,CGB-JPN-1,"04",1-1,💟 Atomic purple,JP eBay
 04-May-2024,C19101392,CGB-JPN-1,"04",5-1,🤍 Clear translucent,UK eBay
+19-Jun-2024,C19146339,CGB-JPN-1,"04",1-1,SE Midnight blue,JP eBay
 16-Aug-2022,C19146364,CGB-JPN-1,"04",1-1,SE Midnight blue,JP eBay
 14-Aug-2022,C19183160,CGB-JPN-1,"04",1-1,🩵 Teal,JP eBay
 30-May-2023,C19220030,CGB-JPN-1,"04",1-1,🤍 Clear translucent,gbhwdb.gekkio.fi
@@ -216,9 +222,8 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 04-Aug-2022,C20563018,CGB-JPN-2,"05",7-1,SE Green translucent,JP eBay
 09-Aug-2022,C20619733,CGB-JPN-2,"05",?-2,🤍 Clear translucent,UK eBay
 14-Apr-2023,C20651527,CGB-JPN-2,05?,?-?,💛 Dandelion,JP eBay
-23-Jul-2022,C20739823,CGB-JPN-2,03 (not original?),1-1,💜 Grape,UK eBay
+23-Jul-2022,C20739823,CGB-JPN-2,03 (swapped?),1-1,💜 Grape,UK eBay
 14-Apr-2023,C20771199,CGB-JPN-2,"05",5-1,🩵 Teal,JP eBay
-11-Aug-2022,C20779820,CGB-JPN-2,"05",1-2,💛 Dandelion,JP eBay
 15-Apr-2023,C20794579,CGB-JPN-2,"05",6-1,🩵 Teal,JP eBay
 14-Aug-2022,C20799673,CGB-JPN-2,"05",?-?,🤍 Clear translucent,JP eBay
 26-Jul-2022,C20898397,CGB-JPN-2,"05",6-2,🤍 Clear translucent,JP eBay
@@ -242,6 +247,6 @@ Date,Serial number,Model,PCB #,Panel (A-B),Case color,Source
 25-Mar-2023,C21823885,CGB-JPN-2,"06",6-2,💛 Dandelion,UK eBay
 16-Aug-2022,C21824998,Missing,"06",10-1,💛 Dandelion,JP eBay
 ,,,,,,
-12-Jun-2024,R800,,,,,Copyright (C) Andrew C.E. Dent 2022-2024
+01-Jul-2024,R861,,,,,Copyright (C) Andrew C.E. Dent 2022-2024
            ,    ,,,,,Work is licensed under CC BY-NC-SA
            ,    ,,,,,https://creativecommons.org/licenses/by-nc-sa/4.0/
