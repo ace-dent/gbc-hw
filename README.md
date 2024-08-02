@@ -2,6 +2,9 @@
 
 A collection of information on the Game Boy Color (CGB) hardware.
 
+- [gbc-census](/gbc-census): Data on the GBC units in circulation.  
+
+
 ## Acknowledgements
 
 Special thanks to @Gekkio.
