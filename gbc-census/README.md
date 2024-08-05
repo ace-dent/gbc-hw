@@ -3,6 +3,12 @@
 A census of GBC devices. This data was manually scraped over a few years.
 Currently the dataset is biased towards the UK.
 
+The data is sorted by serial number and split by prefix:
+- `C` series: Made in Japan, distributed in Japan and internationally ([here](gbc-census-C.csv)).
+- `CG` series: Made in Japan and China for North America ([here](gbc-census-CG.csv)).
+- `CH` series: Made in China, distributed internationally ([here](gbc-census-CH.csv)).
+- `X` series: Promotional units ([here](gbc-census-X.csv)).    
+
 ## Acknowledgements
 
 Special thanks to @Gekkio.
