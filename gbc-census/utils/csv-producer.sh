@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # WARNING: Not safe for public use!
-#   Created for the author's benefit.
+#   Created for the author's benefit
 #   Assumes:
-#   - Correctly formatted main `.csv` file is fed in.
+#   - Correctly formatted main `.csv` file is fed in
 
 
 # Minimal checks for input file
@@ -19,7 +19,7 @@ fi
 
 
 # Make sure the header fields have no trailing spaces
-#  and change `Timestamp` to `Date`.
+#  and change the text `Timestamp` to `Date`.
 sed -i '' 's/ ,/,/g; s/Timestamp/Date/g' "$1"
 # TODO: Generate the separate CSV files, each with a header -
 #   header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
@@ -34,15 +34,17 @@ done
 
 
 # TODO:
-# For the special Pokemon `P` series, we need to move the `POB` serials before `PD`.
+# For the special edition `X` series, we need to move the `POB` serials to the
+#   start of the list. This prioritizes release order, over alphabetic sorting.
 
 
-# Add the version and copyright notice in the footer.
+# Add the version and copyright notice in the footer
 copyright='Copyright (C) Andrew C.E. Dent 2022'
-# Get the current date formatted as DD-Mmm-YYYY and separately the year.
+# Get the current date formatted as DD-Mmm-YYYY and also the year YYYY
 date_full=$(date +'%d-%b-%Y')
 date_year=$(date +'%Y')
-# We use the number of entries (rows) as a revision number `R0###``.
+# We use the number of entries (rows) as a revision number `R0###`,
+#   for document version control.
 row_count=$(($(wc -l < "$1") - 1))
 # Append footer to file(s)
 for file in "$1"; do

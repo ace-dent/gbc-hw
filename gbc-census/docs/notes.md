@@ -8,10 +8,10 @@ Data sampling has been biased towards the author's own region, so may not reflec
 
 ```mermaid
 pie title Source regions
-    "UK" : 59
-    "JP" : 27
-    "US" : 10
-    "Other" : 4
+    "UK" : 55
+    "JP" : 29
+    "US" : 13
+    "Other" : 3
 ```
 
 <hr>
@@ -26,5 +26,5 @@ pie title Source regions
 29-Jul-2024, R1111  
 06-Aug-2024, R1264
 19-Aug-2024, R1565
+31-Aug-2024, R1757
 ```
-

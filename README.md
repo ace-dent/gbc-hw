@@ -11,7 +11,7 @@ Special thanks to @Gekkio.
 
 ## Legal
 
-All trademarks are the property of their respective owners.
+All trademarks are the property of their respective owners.  
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
