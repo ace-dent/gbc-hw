@@ -1,6 +1,6 @@
 # Game Boy Color – Shell designs
 
-Common shell colors and Special Editions (SE) are recognized in the census, with only _very_ rare styles currently excluded. Information is based on sources [1](https://console-test-universe.jimdo.com/nintendo/game-boy-color/game-boy-color-console-variations/) and [2](https://consolevariations.com/database/game-boy-color), and the author's own research. Naming convention tries to match common usage, to make searching easier. This information is intended as a key for the `gbc-census` documents but may be useful independently.
+Common shell colors and Special Editions (SE) are recognized in the census, with only _very_ rare styles currently excluded. Information is based on sources [1](https://console-test-universe.jimdo.com/nintendo/game-boy-color/game-boy-color-console-variations/) and [2](https://consolevariations.com/database/game-boy-color), and the author's own research. Naming convention follows common usage, to make searching easier. This information is intended as a key for the `gbc-census` documents but may be useful independently.
 
 
  <br>
@@ -19,18 +19,18 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🤍 Clear translucent` | Japan | 
 
 
-## Pokemon special editions
+## Pokémon special editions
 
 | Style | Region(s) | Comment |
 | :---- | :-------- | :------ |
-| `💙 SE Pikachu ⚡️` | Europe | Short hand for `SE Pikachu w/ Pichu yellow/blue` |
-| `SE Pokemon w/ Togepi yellow/blue` | N.America |
-| `SE Pokemon w/ Meowth yellow/blue` | Australia |
-| `SE Pikachu w/ Pichu gold-silver` | Americas, Australia, New Zealand |
-| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | Japan |
-| `🩶 SE Pokemon Center gold-silver` | Japan |
+| `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe |
+| `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | N.America |
+| `💙 SE Pokemon w/ Meowth yellow/blue 😼` | Australia, New Zealand |
 | `SE Pokemon w/ Meowth translucent blue/white` |  Hong Kong |
 | `SE Pokemon w/ Meowth translucent green/white` | Taiwan |
+| `🩶 SE Pokemon w/ Pichu gold-silver ⚡️` | Americas, Australia, New Zealand |
+| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | Japan |
+| `🩶 SE Pokemon Center gold-silver` | Japan |
 
 
 ## Opaque, branded special editions
@@ -41,7 +41,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🎀 SE Hello Kitty w/ bow pink` | Japan |
 | `💮 SE Cardcaptor Sakura white/pink` | Japan |
 | `SE Tommy Hilfiger yellow` | N.America |
-| `SE Panasonic Alkaline grape` | ? |
+| `SE Panasonic Alkaline grape` | Japan |
 
 
 ## Translucent, branded special editions
@@ -52,7 +52,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🍊 SE Mirinda translucent orange` | Mexico |
 | `🍊 SE Yedigun translucent orange` | Turkey |
 | `SE Ozzie! translucent green/yellow` | Australia |
-| `✈️ SE ANA translucent skeleton blue` | Japan |
+| `✈️ SE ANA translucent blue` | Japan |
 | `SE Jusco w/ Mario atomic purple` | Japan |
 | `SE Jusco w/ Mario clear translucent` | Japan |
 
@@ -75,7 +75,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Legal
 
-All trademarks are the property of their respective owners.
+All trademarks are the property of their respective owners.  
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 

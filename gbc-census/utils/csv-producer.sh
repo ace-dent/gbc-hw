@@ -43,7 +43,7 @@ copyright='Copyright (C) Andrew C.E. Dent 2022'
 # Get the current date formatted as DD-Mmm-YYYY and also the year YYYY
 date_full=$(date +'%d-%b-%Y')
 date_year=$(date +'%Y')
-# We use the number of entries (rows) as a revision number `R0###`,
+# We use the number of entries (rows - 1x header) as a revision number `R0###`,
 #   for document version control.
 row_count=$(($(wc -l < "$1") - 1))
 # Append footer to file(s)
