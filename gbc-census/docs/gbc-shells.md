@@ -24,7 +24,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | Style | Region(s) | Comment |
 | :---- | :-------- | :------ |
 | `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe |
-| `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | N.America |
+| `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | Americas |
 | `💙 SE Pokemon w/ Meowth yellow/blue 😼` | Australia, New Zealand |
 | `SE Pokemon w/ Meowth translucent blue/white` |  Hong Kong |
 | `SE Pokemon w/ Meowth translucent green/white` | Taiwan |
@@ -51,7 +51,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🍒 SE Sakura Wars translucent cherry` | Japan |
 | `🍊 SE Mirinda translucent orange` | Mexico |
 | `🍊 SE Yedigun translucent orange` | Turkey |
-| `SE Ozzie! translucent green/yellow` | Australia |
+| `SE Ozzie! translucent green/yellow` | Australia, New Zealand |
 | `✈️ SE ANA translucent blue` | Japan |
 | `SE Jusco w/ Mario atomic purple` | Japan |
 | `SE Jusco w/ Mario clear translucent` | Japan |
@@ -64,7 +64,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `SE Daiei Hawks translucent orange/black` | Japan |
 | `SE Toys'R'Us translucent green` | Japan |
 | `💧 SE transparent water blue` | Singapore, Malaysia, Indonesia |
-| `SE Tsutaya translucent pale blue, yellow buttons` | Japan |
+| `SE Tsutaya translucent blue, yellow buttons` | Japan |
 | `❄️ SE translucent ice blue` | Japan, Australia |
 | `SE Lawson translucent blue/clear` | Japan |
 | `SE Toys'R'Us translucent midnight blue-purple` | Japan |

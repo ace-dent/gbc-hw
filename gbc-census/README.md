@@ -1,7 +1,6 @@
 # gbc-census
 
 A census of Game Boy Color devices. This data was manually scraped over a few years.
-Currently the dataset is biased towards the UK.
 
 The data is sorted by serial number and split by prefix into four CSV files:
 - `C` series: Made in Japan, distributed in Japan and internationally ([here](gbc-census-C.csv)).
