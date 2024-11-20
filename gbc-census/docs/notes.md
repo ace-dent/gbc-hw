@@ -15,7 +15,7 @@ The census collects the following information for each device:
 
 ## Census sampling
 
-The project aims to collect ~10 thousand results, to sample 0.02% or 1:5000 units of the ~45.8M population. Adding information to the census takes on average ~3 minutes per device; the completed work represents 500+ hours of labour. The process generally follows 4 steps:
+The project aims to collect ~10 thousand results, to sample 0.02% or 1:5000 units of the ~46M population. Adding information to the census takes on average ~3 minutes per device; the completed work represents 500+ hours of labour. The process generally follows 4 steps:
 1. **Sourcing** – High quality images are identified and correspondence may be necessary to collect all the required information. The candidate is compared against existing data, to reject duplicates or devices that are clearly modified, or where provenance is questionable. 
 2. **Capture** – Data is extracted manually and with OCR, hand checked and entered into a Google Form which performs further validation. 
 3. **Accession** – Newly captured data is carefully reviewed for consistency, in context with the existing results, before being integrated into the main data set.
@@ -23,15 +23,15 @@ The project aims to collect ~10 thousand results, to sample 0.02% or 1:5000 unit
 
 Much of the effort and time is spent ensuring the accuracy of the data set. It may take several years to complete the project.
 
-Progress towards ~0.02% sampling for each serial range:
+Progress towards ~0.02% sampling of each serial range:
 
 ```text
-C.  - 39% [########------------]  931 / 2400
-CG1 -  9% [##------------------]  145 / 1600
-CG5 -  8% [##------------------]  190 / 2400
-CH  - 31% [######--------------]  916 / 3000
+C   - 43% [#########-----------] 1027 / 2400
+CG1 - 11% [##------------------]  177 / 1600
+CG5 - 11% [##------------------]  261 / 2400
+CH  - 33% [#######-------------]  983 / 3000
 
-All - 22% [####----------------] 2245 / 10k
+All - 25% [#####---------------] 2525 / 10k
 ```
 
 
@@ -41,10 +41,10 @@ Data collection has been biased towards the author's own region, so may not refl
 
 ```mermaid
 pie title Source regions
-    "UK" : 47
-    "JP" : 34
-    "US" : 15
-    "Other" : 4
+    "UK" : 44
+    "JP" : 33
+    "US" : 18
+    "Other" : 5
 ```
 
 <hr>
@@ -63,5 +63,7 @@ pie title Source regions
 30-Aug-2024, R1757
 10-Sep-2024, R2042
 31-Oct-2024, R2245
+20-Nov-2024, R2525
 ```
+
 
