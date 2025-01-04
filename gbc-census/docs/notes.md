@@ -6,7 +6,7 @@ The census collects the following information for each device:
 
 - `Date` - The day of data collection.
 - `Serial number` - The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
-- `Model` - The model identifier from the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible, marked as 'Missing'.
+- `Model` - The model identifier from the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible or absent, marked as 'Missing'. If a replica label is detected, it is marked as 'Reproduction'.
 - `PCB #` - PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
 - `Panel (A-B)` - The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). It corresponds to the PCB manufacturing process. Where a number is not clearly visible, it is marked with `?`.
 - `Shell` - The shell design style (details [here](gbc-shells.md)).
@@ -26,24 +26,24 @@ Much of the effort and time is spent ensuring the accuracy of the data set. It m
 Progress towards ~0.02% sampling of each serial range:
 
 ```text
-C   - 43% [#########-----------] 1027 / 2400
-CG1 - 11% [##------------------]  177 / 1600
-CG5 - 11% [##------------------]  261 / 2400
-CH  - 33% [#######-------------]  983 / 3000
+C   - 49% [##########----------] 1164 / 2400
+CG1 - 15% [###-----------------]  241 / 1600
+CG5 - 16% [###-----------------]  390 / 2400
+CH  - 37% [#######-------------] 1112 / 3000
 
-All - 25% [#####---------------] 2525 / 10k
+All - 30% [######--------------] 3009 / 10k
 ```
 
 
 ## Limitations
 
-Data collection has been biased towards the author's own region, so may not reflect the global population. However, the UK market should be indicative of the wider European region. While more international data will be added, this bias may still persist. It is difficult to source devices for North America, in part because the larger serial labels (with barcode) are often missing, or the items are inadequately photographed.
+Data collection has been biased towards the author's own region, so may not reflect the global population. However, the UK market should be indicative of the wider European region. While more international data will be added, this bias may still persist. It is difficult to source devices for North America, in part because the larger serial labels (with barcode) are often missing or damaged.
 
 ```mermaid
 pie title Source regions
-    "UK" : 44
-    "JP" : 33
-    "US" : 18
+    "UK" : 41
+    "JP" : 31
+    "US" : 23
     "Other" : 5
 ```
 
@@ -64,6 +64,6 @@ pie title Source regions
 10-Sep-2024, R2042
 31-Oct-2024, R2245
 20-Nov-2024, R2525
+04-Jan-2025, R3009
 ```
-
 

@@ -41,6 +41,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🎀 SE Hello Kitty w/ bow pink` | Japan |
 | `💮 SE Cardcaptor Sakura white/pink` | Japan |
 | `SE Tommy Hilfiger yellow` | N.America |
+| `SE Doraemon 20th Anniv' teal` | Japan |
 | `SE Panasonic Alkaline grape` | Japan |
 
 
