@@ -2,6 +2,10 @@
 
 A census of Game Boy Color devices. This data was manually scraped over a few years.
 
+![](docs/gbc-mundo.jpg)
+
+<hr>
+
 The data is sorted by serial number and split by prefix into four CSV files:
 - `C` series: Made in Japan, distributed in Japan and internationally ([here](gbc-census-C.csv)).
 - `CG` series: Made in Japan and China for North America ([here](gbc-census-CG.csv)).
@@ -14,9 +18,9 @@ Special thanks to @Gekkio.
 
 ## Legal
 
-All trademarks are the property of their respective owners.
+All trademarks are the property of their respective owners.  
 This work is licensed under a
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa]. Under this license, you are _not permitted to profit from or commercialize work derived from this project._ Please contact the project's author if you would like to separately license the work.
 
 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img width="88" height="31" align="left" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="">
