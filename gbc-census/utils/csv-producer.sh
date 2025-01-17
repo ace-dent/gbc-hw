@@ -23,7 +23,7 @@ if (( file_size < 1024 || file_size > 2097152 )); then
 fi
 
 # Files to be created
-dir=$(dirname "$1")
+dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")/..")
 file_C="${dir}"'/gbc-census-C.csv'
 file_CG="${dir}"'/gbc-census-CG.csv'
 file_CH="${dir}"'/gbc-census-CH.csv'

@@ -16,7 +16,8 @@ I welcome feedback and suggestions, to continue improving the project for everyo
 
 ## Acknowledgements
 
-Special thanks to @Gekkio.
+Contributors: @3615Retro, @Matthaios-Bobolis, @ThibautPlg.  
+Special thanks to @Gekkio for the Game Boy hardware [database](https://gbhwdb.gekkio.fi).
 
 ## Legal
 

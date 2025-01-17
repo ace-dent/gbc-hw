@@ -7,7 +7,7 @@ A collection of information on the Game Boy Color (CGB) hardware.
 
 ## Acknowledgements
 
-Special thanks to @Gekkio.
+Special thanks to @Gekkio for the Game Boy hardware [database](https://gbhwdb.gekkio.fi).
 
 ## Legal
 

@@ -4,11 +4,11 @@
 
 The census collects the following information for each device:
 
-- `Date` - The day of data collection.
+- `Date` - The day when data was collected.
 - `Serial number` - The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
 - `Model` - The model identifier from the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible or absent, marked as 'Missing'. If a replica label is detected, it is marked as 'Reproduction'.
 - `PCB #` - PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
-- `Panel (A-B)` - The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). It corresponds to the PCB manufacturing process. Where a number is not clearly visible, it is marked with `?`.
+- `Panel (A-B)` - The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). The silk screened numbers correspond to the individual PCB panel, for traceability of the manufacturing process. Where a digit is not clearly visible, it is marked with `?`.
 - `Shell` - The shell design style (details [here](gbc-shells.md)).
 - `Source` - Origin of the data. Normally the country code (ISO 3166-1 alpha-2), followed by the website.
 
@@ -26,12 +26,12 @@ Much of the effort and time is spent ensuring the accuracy of the data set. It m
 Progress towards ~0.02% sampling of each serial range:
 
 ```text
-C   - 49% [##########----------] 1164 / 2400
-CG1 - 15% [###-----------------]  241 / 1600
-CG5 - 16% [###-----------------]  390 / 2400
-CH  - 37% [#######-------------] 1112 / 3000
+C   - 50% [##########----------] 1206 / 2400
+CG1 - 16% [###-----------------]  261 / 1600
+CG5 - 18% [####----------------]  422 / 2400
+CH  - 39% [########------------] 1162 / 3000
 
-All - 30% [######--------------] 3009 / 10k
+All - 32% [######--------------] 3158 / 10k
 ```
 
 
@@ -65,5 +65,6 @@ pie title Source regions
 31-Oct-2024, R2245
 20-Nov-2024, R2525
 04-Jan-2025, R3009
+17-Jan-2025, R3158
 ```
 
