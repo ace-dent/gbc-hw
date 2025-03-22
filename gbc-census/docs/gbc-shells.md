@@ -8,21 +8,21 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Standard colors
 
-| Style | Region(s) |
-| :---- | :-------- | 
-| `🩷 Berry` | World |
-| `💛 Dandelion` | World | 
-| `💚 Kiwi` | World | 
-| `🩵 Teal` | World | 
-| `💜 Grape` | World | 
-| `💟 Atomic purple` | World | 
-| `🤍 Clear translucent` | Japan | 
+| Style                  | Regions |
+| :--------------------- | :------ | 
+| `🩷 Berry`             | World   |
+| `💛 Dandelion`         | World   | 
+| `💚 Kiwi`              | World   | 
+| `🩵 Teal`              | World   | 
+| `💜 Grape`             | World   | 
+| `💟 Atomic purple`     | World   | 
+| `🤍 Clear translucent` | Japan   | 
 
 
 ## Pokémon special editions
 
-| Style | Region(s) | Comment |
-| :---- | :-------- | :------ |
+| Style | Regions | Comment |
+| :---- | :------ | :------ |
 | `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe |
 | `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | Americas |
 | `💙 SE Pokemon w/ Meowth yellow/blue 😼` | Australia, New Zealand |
@@ -35,8 +35,8 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Opaque, branded special editions
 
-| Style | Region(s) | Comment |
-| :---- | :-------- | :------ |
+| Style | Regions | Comment |
+| :---- | :------ | :------ |
 | `🌸 SE Hello Kitty w/ flower pink` | Japan |
 | `🎀 SE Hello Kitty w/ bow pink` | Japan |
 | `💮 SE Cardcaptor Sakura white/pink` | Japan |
@@ -47,8 +47,8 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Translucent, branded special editions
 
-| Style | Region(s) | Comment |
-| :---- | :-------- | :------ |
+| Style | Regions | Comment |
+| :---- | :------ | :------ |
 | `🍒 SE Sakura Wars translucent cherry` | Japan |
 | `🍊 SE Mirinda translucent orange` | Mexico |
 | `🍊 SE Yedigun translucent orange` | Turkey |
@@ -60,8 +60,8 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Translucent, unbranded special editions
 
-| Style | Region(s) | Comment |
-| :---- | :-------- | :------ |
+| Style | Regions | Comment |
+| :---- | :------ | :------ |
 | `SE Daiei Hawks translucent orange/black` | Japan |
 | `SE Toys'R'Us translucent green` | Japan |
 | `💧 SE transparent water blue` | Singapore, Malaysia, Indonesia |
