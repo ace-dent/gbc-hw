@@ -26,12 +26,12 @@ Much of the effort and time is spent ensuring the accuracy of the data set. It m
 Progress towards ~0.02% sampling of each serial range:
 
 ```text
-C   - 50% [##########----------] 1206 / 2400
-CG1 - 16% [###-----------------]  261 / 1600
-CG5 - 18% [####----------------]  422 / 2400
-CH  - 39% [########------------] 1162 / 3000
+C   - 52% [##########----------] 1238 / 2400
+CG1 - 17% [###-----------------]  271 / 1600
+CG5 - 18% [####----------------]  433 / 2400
+CH  - 40% [########------------] 1211 / 3000
 
-All - 32% [######--------------] 3158 / 10k
+All - 33% [#######-------------] 3265 / 10k
 ```
 
 
@@ -42,9 +42,9 @@ Data collection has been biased towards the author's own region, so may not refl
 ```mermaid
 pie title Source regions
     "UK" : 41
-    "JP" : 31
+    "JP" : 30
     "US" : 23
-    "Other" : 5
+    "Other" : 6
 ```
 
 <hr>
@@ -66,5 +66,6 @@ pie title Source regions
 20-Nov-2024, R2525
 04-Jan-2025, R3009
 17-Jan-2025, R3158
+19-May-2025, R3265
 ```
 
