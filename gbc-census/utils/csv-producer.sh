@@ -1,33 +1,81 @@
 #!/bin/bash
-
-# WARNING: Not safe for public use!
-#   Created for the author's benefit.
-#   Assumes:
-#   - Correctly formatted main `.csv` file is fed in, to be split by serial
+# SPDX-License-Identifier: CC-BY-NC-SA-4.0
+# SPDX-FileCopyrightText: © 2024 Andrew C.E. Dent <hi@aced.cafe>
+#
+# -----------------------------------------------------------------------------
+# Usage:
+#   - Provide main CSV file, to be split by serial number into separate files.
+#   - Outputs 4 CSV files: gbc-census-C /-CG /-CH /-X.
+#
+# Assumptions:
+#   - Filenames and directory structures follow the project standard.
+#   - Correctly formatted main `.csv` file is fed in, sorted by serial number.
+#
+# WARNING:
+#   May not be safe for public use; created for the author's benefit!
+# -----------------------------------------------------------------------------
 
 
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
-  echo 'Missing filename. Provide a CSV file to process.'
+  echo '✖ Missing filename. Provide a CSV file to process.'
   exit
 fi
 file_check="${1%.*}"'.csv'
 if [[ ! -f "${file_check}" ]]; then
-  echo 'File not found. Check CSV file extension.'
+  echo '✖ File not found. Check CSV file extension.'
   exit
 fi
 file_size=$(stat -f%z "$1")
 if (( file_size < 1024 || file_size > 2097152 )); then
-  echo "File size is outside the allowed range (1 KiB - 2 MiB)."
+  echo "✖ File size is outside the allowed range (1 KiB - 2 MiB)."
+  exit
+fi
+if [[ ! -r "$1" ]]; then
+  echo "✖ Cannot read input file '$1'"
+  exit
+else
+  echo ''
+  echo "Processing CSV file: '$1' ..."
+fi
+
+# We use the number of entries (rows - 1x header) as a revision number `R0###`,
+#   for document version control and checking the input
+row_count=$(($(wc -l < "$1") - 1))
+if [[ "${row_count}" -le 100 ]]; then
+  echo "✖ Input file is too short. Expected over 100 rows."
   exit
 fi
 
+# Check 'signature': first and last rows of inout data match known values
+#   Fill these in to match the dataset exactly (including commas)
+readonly row_a='05-Nov-2024,C10101593,'
+readonly row_z='31-Oct-2024,POB 24237,'
+first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
+# Determine last data row, accounting for potential blank final line
+last_line=$(tail -n1 "$1")
+if [[ -z "${last_line}" ]]; then
+  # Skip the blank footer line and read penultimate row (n-1)
+  last_data_row=$(sed -n "${row_count}p" "$1")
+else
+  last_data_row="${last_line}"
+fi
+if [[ "${first_data_row}" != ${row_a}* ]]; then
+  echo "✖ First row of data doesn't match expected value: '${row_a}'."
+  exit
+fi
+if [[ "${last_data_row}" != ${row_z}* ]]; then
+  echo "✖ Last row of data doesn't match expected value: '${row_z}'."
+  exit
+fi
+
+
 # Files to be created
 dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")/..")
-file_C="${dir}"'/gbc-census-C.csv'
-file_CG="${dir}"'/gbc-census-CG.csv'
-file_CH="${dir}"'/gbc-census-CH.csv'
-file_X="${dir}"'/gbc-census-X.csv'
+readonly file_C="${dir}"'/gbc-census-C.csv'
+readonly file_CG="${dir}"'/gbc-census-CG.csv'
+readonly file_CH="${dir}"'/gbc-census-CH.csv'
+readonly file_X="${dir}"'/gbc-census-X.csv'
 # Temporary file buffers
 buffer_C=''
 buffer_CG=''
@@ -41,7 +89,7 @@ buffer_X=''
 header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
 # Create the files with header row
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
-  echo "$header" > "$file"
+  echo "${header}" > "${file}"
 done
 
 
@@ -82,9 +130,6 @@ readonly copyright='Copyright (C) Andrew C.E. Dent 2022'
 # Get the current date formatted as DD-Mmm-YYYY and also the year YYYY
 date_full=$(date +'%d-%b-%Y')
 date_year=$(date +'%Y')
-# We use the number of entries (rows - 1x header) as a revision number `R0###`,
-#   for document version control.
-row_count=$(($(wc -l < "$1") - 1))
 # Append footer to file(s)
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   {
@@ -95,5 +140,21 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   } >> "${file}"
 done
 
-# TODO: Add some sanity checks for the output files.
-#   E.g. make sure rows sum to the total.
+# Check output: Verify split-row counts match original total
+total_out_rows=0
+for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
+  if [[ ! -r "${file}" ]]; then
+    echo "✖ Output file is missing or unreadable: $file"
+    exit
+  fi
+  count=$(( $(wc -l < "${file}") - 5 )) # subtract header and footer rows
+  total_out_rows=$(( total_out_rows + count ))
+done
+if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
+  echo "✖ Total output rows ($total_out_rows) does not match input ($row_count)!"
+  exit
+fi
+
+echo '...Finished :)'
+echo ''
+exit
