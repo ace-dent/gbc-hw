@@ -16,23 +16,28 @@
 # -----------------------------------------------------------------------------
 
 
+#  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
+ERR='✖ Error:' WARN='▲ Warning:'
+[[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
+  && ERR=$'\e[31m'$ERR$'\e[0m' WARN=$'\e[33m'$WARN$'\e[0m'
+
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
-  echo '✖ Missing filename. Provide a CSV file to process.'
+  echo "${ERR} Missing filename. Provide a CSV file to process."
   exit
 fi
 file_check="${1%.*}"'.csv'
 if [[ ! -f "${file_check}" ]]; then
-  echo '✖ File not found. Check CSV file extension.'
+  echo "${ERR} File not found. Check CSV file extension."
   exit
 fi
 file_size=$(stat -f%z "$1")
 if (( file_size < 1024 || file_size > 2097152 )); then
-  echo "✖ File size is outside the allowed range (1 KiB - 2 MiB)."
+  echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)."
   exit
 fi
 if [[ ! -r "$1" ]]; then
-  echo "✖ Cannot read input file '$1'"
+  echo "${ERR} Cannot read input file '$1'"
   exit
 else
   echo ''
@@ -43,7 +48,7 @@ fi
 #   for document version control and checking the input
 row_count=$(($(wc -l < "$1") - 1))
 if [[ "${row_count}" -le 100 ]]; then
-  echo "✖ Input file is too short. Expected over 100 rows."
+  echo "${ERR} Input file is too short. Expected over 100 rows."
   exit
 fi
 
@@ -61,11 +66,11 @@ else
   last_data_row="${last_line}"
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
-  echo "✖ First row of data doesn't match expected value: '${row_a}'."
+  echo "${ERR} First row of data doesn't match expected value: '${row_a}'."
   exit
 fi
 if [[ "${last_data_row}" != ${row_z}* ]]; then
-  echo "✖ Last row of data doesn't match expected value: '${row_z}'."
+  echo "${ERR} Last row of data doesn't match expected value: '${row_z}'."
   exit
 fi
 
@@ -144,14 +149,14 @@ done
 total_out_rows=0
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   if [[ ! -r "${file}" ]]; then
-    echo "✖ Output file is missing or unreadable: $file"
+    echo "${ERR} Output file is missing or unreadable: $file"
     exit
   fi
   count=$(( $(wc -l < "${file}") - 5 )) # subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
-  echo "✖ Total output rows ($total_out_rows) does not match input ($row_count)!"
+  echo "${ERR} Total output rows ($total_out_rows) does not match input ($row_count)!"
   exit
 fi
 
