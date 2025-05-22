@@ -12,7 +12,9 @@
 #   - Correctly formatted main `.csv` file is fed in, sorted by serial number.
 #
 # WARNING:
-#   May not be safe for public use; created for the author's benefit!
+#   May not be safe for public use; created for the author’s benefit.
+#   Provided “as is”, without warranty of any kind; see the
+#   accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
 
@@ -26,9 +28,8 @@ if [[ -z "$1" ]]; then
   echo "${ERR} Missing filename. Provide a CSV file to process."
   exit
 fi
-file_check="${1%.*}"'.csv'
-if [[ ! -f "${file_check}" ]]; then
-  echo "${ERR} File not found. Check CSV file extension."
+if [[ ! -f "${1%.*}.csv" || ! -r "$1" ]]; then
+  echo "${ERR} File not accessible. CSV file required."
   exit
 fi
 file_size=$(stat -f%z "$1")
@@ -36,13 +37,10 @@ if (( file_size < 1024 || file_size > 2097152 )); then
   echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)."
   exit
 fi
-if [[ ! -r "$1" ]]; then
-  echo "${ERR} Cannot read input file '$1'"
-  exit
-else
-  echo ''
-  echo "Processing CSV file: '$1' ..."
-fi
+
+echo ''
+echo "Processing CSV file: '$1' ..."
+
 
 # We use the number of entries (rows - 1x header) as a revision number `R0###`,
 #   for document version control and checking the input
@@ -52,7 +50,7 @@ if [[ "${row_count}" -le 100 ]]; then
   exit
 fi
 
-# Check 'signature': first and last rows of inout data match known values
+# Check 'signature': first and last rows of input data match known values
 #   Fill these in to match the dataset exactly (including commas)
 readonly row_a='05-Nov-2024,C10101593,'
 readonly row_z='31-Oct-2024,POB 24237,'
@@ -145,6 +143,7 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   } >> "${file}"
 done
 
+
 # Check output: Verify split-row counts match original total
 total_out_rows=0
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
@@ -159,6 +158,7 @@ if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
   echo "${ERR} Total output rows ($total_out_rows) does not match input ($row_count)!"
   exit
 fi
+
 
 echo '...Finished :)'
 echo ''
