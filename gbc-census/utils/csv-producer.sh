@@ -22,9 +22,9 @@
 
 
 # Message decorations - colored for terminals with NO_COLOR unset
-ERR='✖ Error:' WARN='▲ Warning:'
+ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
-  && ERR=$'\e[31m'$ERR$'\e[m' WARN=$'\e[33m'$WARN$'\e[m'
+  && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
@@ -164,6 +164,6 @@ if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
 fi
 
 
-echo '...Finished :)'
+echo " ...Finished! ${DONE}"
 echo ''
 exit 0
