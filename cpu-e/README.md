@@ -1,15 +1,10 @@
-# gbc-hw
+# CPU-E
 
-A collection of information on the Game Boy Color (CGB) hardware:
-
-- [gbc-census](/gbc-census) – Data on the devices in circulation.
-
-I welcome feedback and suggestions, to continue improving the project for everyone. It really motivates me that people enjoy my work. Please keep the data gnomes fed with a [star](https://github.com/ace-dent/gbc-hw/stargazers)! ⭐️
+Information on CPU-CGB-E.
 
 
 ## Acknowledgements
 
-Special thanks to @Gekkio for the Game Boy hardware [database](https://gbhwdb.gekkio.fi).
 
 ## Legal
 
