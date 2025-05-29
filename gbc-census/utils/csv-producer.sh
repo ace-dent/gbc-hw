@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
 # SPDX-FileCopyrightText: © 2024 Andrew C.E. Dent <hi@aced.cafe>
 #
@@ -21,7 +21,7 @@
 #  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
 ERR='✖ Error:' WARN='▲ Warning:'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
-  && ERR=$'\e[31m'$ERR$'\e[0m' WARN=$'\e[33m'$WARN$'\e[0m'
+  && ERR=$'\e[31m'$ERR$'\e[m' WARN=$'\e[33m'$WARN$'\e[m'
 
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
