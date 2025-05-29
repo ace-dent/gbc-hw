@@ -7,6 +7,9 @@
 #   - Provide main CSV file, to be split by serial number into separate files.
 #   - Outputs 4 CSV files: gbc-census-C /-CG /-CH /-X.
 #
+# Requirements:
+#   - Bash v3.0+
+#
 # Assumptions:
 #   - Filenames and directory structures follow the project standard.
 #   - Correctly formatted main `.csv` file is fed in, sorted by serial number.
@@ -18,7 +21,7 @@
 # -----------------------------------------------------------------------------
 
 
-#  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
+# Message decorations - colored for terminals with NO_COLOR unset
 ERR='✖ Error:' WARN='▲ Warning:'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
   && ERR=$'\e[31m'$ERR$'\e[m' WARN=$'\e[33m'$WARN$'\e[m'
@@ -26,28 +29,28 @@ ERR='✖ Error:' WARN='▲ Warning:'
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
   echo "${ERR} Missing filename. Provide a CSV file to process."
-  exit
+  exit 1
 fi
 if [[ ! -f "${1%.*}.csv" || ! -r "$1" ]]; then
   echo "${ERR} File not accessible. CSV file required."
-  exit
+  exit 1
 fi
-file_size=$(stat -f%z "$1")
+file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
 if (( file_size < 1024 || file_size > 2097152 )); then
   echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)."
-  exit
+  exit 1
 fi
 
 echo ''
 echo "Processing CSV file: '$1' ..."
 
 
-# We use the number of entries (rows - 1x header) as a revision number `R0###`,
+# We use the number of entries (rows - 1x header) as a revision number `R01234`,
 #   for document version control and checking the input
-row_count=$(($(wc -l < "$1") - 1))
+row_count=$(( $(wc -l < "$1") - 1 ))
 if [[ "${row_count}" -le 100 ]]; then
   echo "${ERR} Input file is too short. Expected over 100 rows."
-  exit
+  exit 1
 fi
 
 # Check 'signature': first and last rows of input data match known values
@@ -65,16 +68,16 @@ else
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
   echo "${ERR} First row of data doesn't match expected value: '${row_a}'."
-  exit
+  exit 1
 fi
 if [[ "${last_data_row}" != ${row_z}* ]]; then
   echo "${ERR} Last row of data doesn't match expected value: '${row_z}'."
-  exit
+  exit 1
 fi
 
 
 # Files to be created
-dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")/..")
+dir="$(dirname "${BASH_SOURCE[0]}")/.."
 readonly file_C="${dir}"'/gbc-census-C.csv'
 readonly file_CG="${dir}"'/gbc-census-CG.csv'
 readonly file_CH="${dir}"'/gbc-census-CH.csv'
@@ -131,16 +134,16 @@ echo -n "${buffer_X}" >> "${file_X}"
 # Add the version and copyright notice in the footer
 readonly copyright='Copyright (C) Andrew C.E. Dent 2022'
 # Get the current date formatted as DD-Mmm-YYYY and also the year YYYY
-date_full=$(date +'%d-%b-%Y')
+date_full=$(LC_TIME=C date +'%d-%b-%Y')
 date_year=$(date +'%Y')
 # Append footer to file(s)
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   {
     printf ',,,,,,\n'
     printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
-    printf '           ,      ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
-    printf '           ,      ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
-    printf '           ,      ,,,,, Provided “as is”, without warranty of any kind.'
+    printf '           ,       ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
+    printf '           ,       ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
+    printf '           ,       ,,,,, Provided “as is”, without warranty of any kind.\n'
   } >> "${file}"
 done
 
@@ -150,17 +153,17 @@ total_out_rows=0
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   if [[ ! -r "${file}" ]]; then
     echo "${ERR} Output file is missing or unreadable: $file"
-    exit
+    exit 1
   fi
-  count=$(( $(wc -l < "${file}") - 1 - 5 )) # subtract header and footer rows
+  count=$(( $(wc -l < "${file}") -1 -5 )) # subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
   echo "${ERR} Total output rows ($total_out_rows) does not match input ($row_count)!"
-  exit
+  exit 1
 fi
 
 
 echo '...Finished :)'
 echo ''
-exit
+exit 0
