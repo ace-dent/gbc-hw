@@ -137,7 +137,7 @@ date_year=$(date +'%Y')
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   {
     printf ',,,,,,\n'
-    printf '%s, R%04u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
+    printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
     printf '           ,      ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
     printf '           ,      ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
     printf '           ,      ,,,,, Provided “as is”, without warranty of any kind.'
@@ -152,7 +152,7 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
     echo "${ERR} Output file is missing or unreadable: $file"
     exit
   fi
-  count=$(( $(wc -l < "${file}") - 5 )) # subtract header and footer rows
+  count=$(( $(wc -l < "${file}") - 1 - 5 )) # subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
