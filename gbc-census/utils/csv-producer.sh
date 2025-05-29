@@ -12,8 +12,8 @@
 #   - Correctly formatted main `.csv` file is fed in, sorted by serial number.
 #
 # WARNING:
-#   May not be safe for public use; created for the author’s benefit.
-#   Provided “as is”, without warranty of any kind; see the
+#   May not be safe for public use; created for the author's benefit.
+#   Provided "as is", without warranty of any kind; see the
 #   accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
@@ -140,6 +140,7 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
     printf '%s, R%04u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
     printf '           ,      ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
     printf '           ,      ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
+    printf '           ,      ,,,,, Provided “as is”, without warranty of any kind.'
   } >> "${file}"
 done
 

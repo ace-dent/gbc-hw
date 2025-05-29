@@ -2,7 +2,9 @@
 
 A collection of information on the Game Boy Color (CGB) hardware.
 
-- [gbc-census](/gbc-census): Data on the GBC units in circulation.  
+- [gbc-census](/gbc-census): Data on the CGB units in circulation.  
+
+I welcome feedback and suggestions, to continue improving the project for everyone. It really motivates me that people enjoy my work. Please keep the data gnomes fed with a [star](https://github.com/ace-dent/gbc-hw/stargazers)! ⭐️
 
 
 ## Acknowledgements
@@ -11,12 +13,16 @@ Special thanks to @Gekkio for the Game Boy hardware [database](https://gbhwdb.ge
 
 ## Legal
 
-All trademarks are the property of their respective owners.  
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa]. Under this license, you are _not permitted to profit from or commercialize work derived from this project._ Please contact the project's author if you would like to separately license the work.
+All trademarks referenced in this project remain the sole property of their respective owners.  
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Under this license, you may share and adapt this work, provided you attribute it properly, share derivatives under the same license, and do not use it for commercial purposes.
+
+The content within this project is provided "as is", without warranty of any kind regarding accuracy, completeness, or fitness for any specific purpose. Use of the provided content is entirely at your own risk. Please see the LICENSE for full terms of use.
+
+For inquiries regarding alternative licensing arrangements, commercial use, or other permissions, please contact the project author directly.
 
 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img width="88" height="31" align="left" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="">
 </a>
 
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+**© 2022–2025 Andrew C.E. Dent**.
