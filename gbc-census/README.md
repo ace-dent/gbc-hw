@@ -14,10 +14,12 @@ The data is sorted by serial number and split by prefix into four CSV files:
 
 I welcome feedback and suggestions, to continue improving the project for everyone. It really motivates me that people enjoy my work. Please keep the data gnomes fed with a [star](https://github.com/ace-dent/gbc-hw/stargazers)! ⭐️
 
+
 ## Acknowledgements
 
 Contributors: @3615Retro, @Matthaios-Bobolis, @ThibautPlg.  
 Special thanks to @Gekkio for the Game Boy hardware [database](https://gbhwdb.gekkio.fi).
+
 
 ## Legal
 
