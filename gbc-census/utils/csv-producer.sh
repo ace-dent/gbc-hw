@@ -15,24 +15,31 @@
 #   - Correctly formatted main `.csv` file is fed in, sorted by serial number.
 #
 # WARNING:
-#   May not be safe for public use; created for the author's benefit.
-#   Provided "as is", without warranty of any kind; see the
-#   accompanying LICENSE file for full terms. Use at your own risk!
+#     May not be safe for public use; created for the author's benefit.
+#     Provided "as is", without warranty of any kind; see the
+#     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
+
+# Set POSIX locale for consistent byte-wise sorting and pattern matching
+export LC_COLLATE=C
 
 # Message decorations - colored for terminals with NO_COLOR unset
 ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
   && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
+# Check the system character map supports Unicode glyphs
+if [[ "$(locale charmap)" != *UTF-8* ]]; then
+  echo "${WARN} System locale may not support extended UTF-8 characters."
+fi
 # Minimal checks for input file
 if [[ -z "$1" ]]; then
   echo "${ERR} Missing filename. Provide a CSV file to process."
   exit 1
 fi
 if [[ ! -f "${1%.*}.csv" || ! -r "$1" ]]; then
-  echo "${ERR} File not accessible. CSV file required."
+  echo "${ERR} File is not accessible. CSV file required."
   exit 1
 fi
 file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
@@ -143,7 +150,7 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
     printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
     printf '           ,       ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
     printf '           ,       ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
-    printf '           ,       ,,,,, Provided “as is”, without warranty of any kind.\n'
+    printf '           ,       ,,,,, Provided “as is”- without warranty of any kind.\n'
   } >> "${file}"
 done
 
