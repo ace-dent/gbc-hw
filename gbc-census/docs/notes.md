@@ -1,6 +1,6 @@
 # gbc-census – Notes
 
-## Data collection
+## Data
 
 The census collects the following information for each device:
 
@@ -13,9 +13,11 @@ The census collects the following information for each device:
 - **Source** – Origin of the data. Normally the country code (ISO 3166-1 alpha-2), followed by the website.
 
 
-## Census sampling
+## Sampling
 
-The project aims to collect ~10,000 results, to sample 0.02% —or 1 in 5,000— of the estimated 46 million units produced. Adding a single entry to the census takes, on average, 3+ minutes per device; the final census will represent more than 500 hours of labour. The process generally follows four steps:
+The project aims to collect ~10,000 results, to sample 0.02% — or 1 in 5,000 — of the estimated 46 million units produced. Adding a single entry to the census takes, on average, 3+ minutes per device. The final census will represent more than 500 hours of labour. 
+
+The process generally follows four steps:
 
 1. **Sourcing** – High quality images are identified and correspondence may be necessary to collect all the required information. Each candidate is compared against existing data to reject duplicates, clearly modified devices, or those with questionable provenance.
 2. **Capture** – Data is extracted manually and with OCR, hand checked and entered into a Google Form which performs further validation. 
@@ -24,15 +26,15 @@ The project aims to collect ~10,000 results, to sample 0.02% —or 1 in 5,000—
 
 Much of the time and effort is devoted to ensuring the accuracy of the data set. It may take several years to complete the project.
 
-Progress towards ~0.02% sampling of each serial range:
+Progress towards ~0.02% sampling for each serial range:
 
 ```text
-C   - 52% [##########----------] 1238 / 2400
-CG1 - 17% [###-----------------]  271 / 1600
-CG5 - 18% [####----------------]  433 / 2400
-CH  - 40% [########------------] 1211 / 3000
+C   — 54% ▕█████████████▌           ▏ 1303 / 2400
+CG1 — 18% ▕████▌                    ▏  289 / 1600
+CG5 — 19% ▕████▊                    ▏  460 / 2400
+CH  — 41% ▕██████████▎              ▏ 1237 / 3000
 
-All - 33% [#######-------------] 3265 / 10k
+All — 34% ▕████████▌                ▏ 3410 / 10k
 ```
 
 
@@ -42,16 +44,18 @@ Data collection has been biased toward the author's own region, and may not full
 
 ```mermaid
 pie title Source regions
-    "UK" : 41
+    "UK" : 40
     "JP" : 30
-    "US" : 23
+    "US" : 24
     "Other" : 6
 ```
 
 <hr>
 
 
-## Release history
+## History
+
+Releases are tracked by a revision number `R01234` – a cumulative row count, reflecting the size of the dataset. 
 
 ```text
 29-May-2024, R00759  
@@ -68,6 +72,6 @@ pie title Source regions
 04-Jan-2025, R03009
 17-Jan-2025, R03158
 19-May-2025, R03265
-XX-Jun-2025, R0XXXX
+31-May-2025, R03410
 ```
 
