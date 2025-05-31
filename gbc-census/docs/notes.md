@@ -26,7 +26,9 @@ The process generally follows four steps:
 
 Much of the time and effort is devoted to ensuring the accuracy of the data set. It may take several years to complete the project.
 
-Progress towards ~0.02% sampling for each serial range:
+### Progress
+
+Sampling progress toward the census target, shown by serial range:
 
 ```text
 C   — 54% ▕█████████████▌           ▏ 1303 / 2400
