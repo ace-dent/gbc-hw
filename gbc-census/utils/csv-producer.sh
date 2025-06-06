@@ -64,8 +64,8 @@ fi
 
 # Check 'signature': first and last rows of input data match known values
 #   Fill these in to match the dataset exactly (including commas)
-readonly row_a='05-Nov-2024,C10101593,'
-readonly row_z='31-Oct-2024,POB 24237,'
+readonly row_a='2024-11-05,C10101593,'
+readonly row_z='2024-10-31,POB 24237,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
 last_line=$(tail -n1 "$1")
@@ -151,17 +151,17 @@ printf '%s\n' "${rows_CH[@]}" >> "${file_CH}"
 
 # Add the version and copyright notice in the footer
 readonly copyright='Copyright (C) Andrew C.E. Dent 2022'
-# Get the current date formatted as DD-Mmm-YYYY and also the year YYYY
-date_full=$(LC_TIME=C date +'%d-%b-%Y')
-date_year=$(date +'%Y')
+# Get the current date formatted as YYYY-MM-DD (ISO 8601) and the year YYYY
+date_full=$(date '+%F')
+date_year=$(date '+%Y')
 # Append footer to file(s)
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   {
     printf ',,,,,,\n'
     printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
-    printf '           ,       ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
-    printf '           ,       ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
-    printf '           ,       ,,,,, Provided “as is”- without warranty of any kind.\n'
+    printf '          ,       ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
+    printf '          ,       ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
+    printf '          ,       ,,,,, Provided “as is”- without warranty of any kind.\n'
   } >> "${file}"
 done
 
