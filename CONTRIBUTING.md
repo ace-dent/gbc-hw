@@ -30,4 +30,6 @@ All contributors are expected to follow our [Code of Conduct](./CODE_OF_CONDUCT.
  
 If you have questions, feel free to open an Issue or contact the maintainer directly.
 
-Thanks for helping preserve Game Boy Color history!
+Thanks for helping preserve Game Boy Color history! 
+
+# 🩷💜💚💛🩵
