@@ -20,6 +20,8 @@
 #     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
+# Strict mode: immediately exit on error, an unset variable or pipe failure
+set -euo pipefail
 
 # Set POSIX locale for consistent byte-wise sorting and pattern matching
 export LC_COLLATE=C
@@ -34,7 +36,7 @@ if [[ "$(locale charmap)" != *UTF-8* ]]; then
   echo "${WARN} System locale may not support extended UTF-8 characters."
 fi
 # Minimal checks for input file
-if [[ -z "$1" ]]; then
+if [[ -z "${1:-}" ]]; then
   echo "${ERR} Missing filename. Provide a CSV file to process."
   exit 1
 fi
@@ -89,16 +91,16 @@ readonly file_C="${dir}"'/gbc-census-C.csv'
 readonly file_CG="${dir}"'/gbc-census-CG.csv'
 readonly file_CH="${dir}"'/gbc-census-CH.csv'
 readonly file_X="${dir}"'/gbc-census-X.csv'
-# Temporary file buffers
-buffer_C=''
-buffer_CG=''
-buffer_CH=''
-buffer_POB=''
-buffer_X=''
+# Temporary array buffers (for each serial group)
+rows_C=()
+rows_CG=()
+rows_CH=()
+rows_POB=()
+rows_X=() # All other serial rows
 
 
 # Make sure the header fields have no trailing spaces
-#  and change the text `Timestamp` to `Date`.
+#  and change the text `Timestamp` to `Date`
 header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
 # Create the files with header row
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
@@ -107,35 +109,44 @@ done
 
 
 # Enclose PCB numbers `,0n,` in double quotes `,"0n",` (n=2-6),
-#   to ensure they are treated as text fields when importing the CSV.
-# We don't enclose implicit text fields, to save some bytes.
+#   to ensure they are treated as text fields when importing the CSV
+# We don't enclose implicit text fields, to save some bytes
 for i in {2..6}; do
   sed -i '' "s/,0$i,/,\"0$i\",/g" "$1"
 done
 
 
-# Process each row, skipping the header
-while IFS=, read -r col1 col2 col_rest; do
-  if [[ "${col2}" =~ ^C[0-9] ]]; then
-    buffer_C+="${col1},${col2},${col_rest}"$'\n'
-  elif [[ "${col2}" =~ ^CG[0-9] ]]; then
-    buffer_CG+="${col1},${col2},${col_rest}"$'\n'
-  elif [[ "${col2}" =~ ^CH[0-9] ]]; then
-    buffer_CH+="${col1},${col2},${col_rest}"$'\n'
-  elif [[ "${col2}" =~ ^POB\ [0-9] ]]; then
-    buffer_POB+="${col1},${col2},${col_rest}"$'\n'
-  else
-    buffer_X+="${col1},${col2},${col_rest}"$'\n'
-  fi
+# Place each CSV row into the correct serial group, skipping the header
+while IFS=, read -r date serial other_columns; do
+  row="${date},${serial},${other_columns}"
+  case "${serial}" in
+    C[0-9]*)
+      rows_C+=("${row}")
+      ;;
+    CG[0-9]*)
+      rows_CG+=("${row}")
+      ;;
+    CH[0-9]*)
+      rows_CH+=("${row}")
+      ;;
+    'POB '[0-9]*)
+      rows_POB+=("${row}")
+      ;;
+    *)
+      rows_X+=("${row}")
+      ;;
+  esac
 done < <(tail -n +2 "$1")
-# Write buffers to files
-echo -n "${buffer_C}" >> "${file_C}"
-echo -n "${buffer_CG}" >> "${file_CG}"
-echo -n "${buffer_CH}" >> "${file_CH}"
-# For the special edition `X` series, we move the `POB` serials to the start.
-#   This prioritizes release order, over alphabetic sorting.
-echo -n "${buffer_POB}" >> "${file_X}"
-echo -n "${buffer_X}" >> "${file_X}"
+# Write each buffers to its corresponding file
+printf '%s\n' "${rows_C[@]}" >> "${file_C}"
+printf '%s\n' "${rows_CG[@]}" >> "${file_CG}"
+printf '%s\n' "${rows_CH[@]}" >> "${file_CH}"
+# For the special edition `X` series, we move the `POB` serials to the start
+#   This prioritizes release order, over alphabetic sorting
+{
+  printf '%s\n' "${rows_POB[@]}"
+  printf '%s\n' "${rows_X[@]}"
+} >> "${file_X}"
 
 
 # Add the version and copyright notice in the footer
@@ -162,7 +173,7 @@ for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
     echo "${ERR} Output file is missing or unreadable: $file"
     exit 1
   fi
-  count=$(( $(wc -l < "${file}") -1 -5 )) # subtract header and footer rows
+  count=$(( $(wc -l < "${file}") -1 -5 )) # Subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
