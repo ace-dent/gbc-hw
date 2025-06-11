@@ -33,32 +33,32 @@ ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 
 # Check the system character map supports Unicode glyphs
 if [[ "$(locale charmap)" != *UTF-8* ]]; then
-  echo "${WARN} System locale may not support extended UTF-8 characters."
+  echo "${WARN} System locale may not support extended UTF-8 characters." >&2
 fi
 # Minimal checks for input file
 if [[ -z "${1:-}" ]]; then
-  echo "${ERR} Missing filename. Provide a CSV file to process."
+  echo "${ERR} Missing filename. Provide a CSV file to process." >&2
   exit 1
 fi
-if [[ ! -f "${1%.*}.csv" || ! -r "$1" ]]; then
-  echo "${ERR} File is not accessible. CSV file required."
+if [[ ! -r "$1" || ! "$1" =~ \.(csv|CSV)$ ]]; then
+  echo "${ERR} A readable CSV file is required." >&2
   exit 1
 fi
 file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
 if (( file_size < 1024 || file_size > 2097152 )); then
-  echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)."
+  echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)." >&2
   exit 1
 fi
 
 echo ''
-echo "Processing CSV file: '$1' ..."
+echo "Processing: '$1' ..."
 
 
 # We use the number of entries (rows - 1x header) as a revision number `R01234`,
 #   for document version control and checking the input
 row_count=$(( $(wc -l < "$1") - 1 ))
-if [[ "${row_count}" -le 100 ]]; then
-  echo "${ERR} Input file is too short. Expected over 100 rows."
+if [[ "${row_count}" -lt 100  || "${row_count}" -gt 20000 ]]; then
+  echo "${ERR} Row count is outside the allowed range (100 - 20k)." >&2
   exit 1
 fi
 
@@ -69,18 +69,18 @@ readonly row_z='2024-10-31,POB 24237,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
 last_line=$(tail -n1 "$1")
-if [[ -z "${last_line}" ]]; then
+if [[ -z "${last_line//[[:space:]]/}" ]]; then
   # Skip the blank footer line and read penultimate row (n-1)
   last_data_row=$(sed -n "${row_count}p" "$1")
 else
   last_data_row="${last_line}"
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
-  echo "${ERR} First row of data doesn't match expected value: '${row_a}'."
+  echo "${ERR} First row of data doesn't match expected value: '${row_a}'." >&2
   exit 1
 fi
 if [[ "${last_data_row}" != ${row_z}* ]]; then
-  echo "${ERR} Last row of data doesn't match expected value: '${row_z}'."
+  echo "${ERR} Last row of data doesn't match expected value: '${row_z}'." >&2
   exit 1
 fi
 
@@ -104,7 +104,8 @@ rows_X=() # All other serial rows
 header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
 # Create the files with header row
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
-  echo "${header}" > "${file}"
+  printf '%s\n' "$header" > "${file}" \
+    || { echo "${ERR} Failed writing to file: '${file}'." >&2; exit 1; }
 done
 
 
@@ -170,15 +171,17 @@ done
 total_out_rows=0
 for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
   if [[ ! -r "${file}" ]]; then
-    echo "${ERR} Output file is missing or unreadable: $file"
+    echo "${ERR} Output file is missing or unreadable: $file" >&2
     exit 1
   fi
   count=$(( $(wc -l < "${file}") -1 -5 )) # Subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
-  echo "${ERR} Total output rows ($total_out_rows) does not match input ($row_count)!"
+  echo "${ERR} Total output rows (${total_out_rows}) does not match input (${row_count})!" >&2
   exit 1
+else
+  echo "${row_count} rows split into corresponding CSV files."
 fi
 
 
