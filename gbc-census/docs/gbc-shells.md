@@ -1,6 +1,6 @@
 # Game Boy Color – Shell designs
 
-Common shell colors and Special Editions (SE) are recognized in the census, with only _very_ rare styles currently excluded. Information is based on sources [1](https://console-test-universe.jimdo.com/nintendo/game-boy-color/game-boy-color-console-variations/) and [2](https://consolevariations.com/database/game-boy-color), and the author's own research. Naming convention follows common usage, to make searching easier. This information is intended as a key for the `gbc-census` documents but may be useful independently.
+Common shell colors and Special Editions (SE) are recognized in the census, with only _very_ rare styles currently excluded. Information is based on various sources, including [Consolevariations](https://consolevariations.com/database/game-boy-color) and the author's own research. Naming convention follows common usage, to make searching easier. This information is intended as a key for the `gbc-census` documents but may be useful independently.
 
 
  <br>
@@ -8,15 +8,15 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 ## Standard colors
 
-| Style                  | Regions |
-| :--------------------- | :------ | 
-| `🩷 Berry`             | World   |
-| `💛 Dandelion`         | World   | 
-| `💚 Kiwi`              | World   | 
-| `🩵 Teal`              | World   | 
-| `💜 Grape`             | World   | 
-| `💟 Atomic purple`     | World   | 
-| `🤍 Clear translucent` | Japan   | 
+| Style                  | Regions          | Comment                  |
+| :--------------------- | :--------------- | :----------------------- |
+| `🩷 Berry`             | World            | 1998, in: `C`,`CG`,`CH`. |
+| `💛 Dandelion`         | World            | 1998, in: `C`,`CG`,`CH`. |
+| `💚 Kiwi`              | World, exc. JP   | 1998, in: `C`,`CG`,`CH`. |
+| `🩵 Teal`              | World            | 1998, in: `C`,`CG`,`CH`. |
+| `💜 Grape`             | World            | 1998, in: `C`,`CG`,`CH`. |
+| `💟 Atomic purple`     | World            | 1998, in: `C`,`CG`,`CH`. |
+| `🤍 Clear translucent` | JP, Asia-Pacific | 1998, in: `C`,`CH`.      |
 
 
 ## Pokémon special editions
