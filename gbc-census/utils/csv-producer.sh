@@ -63,7 +63,7 @@ fi
 
 # Check 'signature': first and last rows of input data match known values
 #   Fill these in to match the dataset exactly (including commas)
-readonly row_a='2024-11-05,C10101593,'
+readonly row_a='2025-06-17,C10003149,'
 readonly row_z='2024-10-31,POB 24237,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
