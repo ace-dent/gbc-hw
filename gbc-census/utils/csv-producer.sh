@@ -23,14 +23,13 @@
 # Strict mode: immediately exit on error, an unset variable or pipe failure
 set -euo pipefail
 
-# Set POSIX locale for consistent byte-wise sorting and pattern matching
-export LC_COLLATE=C
-
 # Message decorations - colored for terminals with NO_COLOR unset
 ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
   && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
+# Set POSIX locale for consistent byte-wise sorting and pattern matching
+export LC_COLLATE=C
 # Check the system character map supports Unicode glyphs
 if [[ "$(locale charmap)" != *UTF-8* ]]; then
   echo "${WARN} System locale may not support extended UTF-8 characters." >&2
@@ -44,7 +43,7 @@ if [[ ! -r "$1" || ! "$1" =~ \.(csv|CSV)$ ]]; then
   echo "${ERR} A readable CSV file is required." >&2
   exit 1
 fi
-file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
+file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1" || echo 0)
 if (( file_size < 1024 || file_size > 2097152 )); then
   echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)." >&2
   exit 1
@@ -57,7 +56,7 @@ echo "Processing: '$1' ..."
 # We use the number of entries (rows - 1x header) as a revision number `R01234`,
 #   for document version control and checking the input
 row_count=$(( $(wc -l < "$1") - 1 ))
-if [[ "${row_count}" -lt 100  || "${row_count}" -gt 20000 ]]; then
+if (( row_count < 100 || row_count > 20000 )); then
   echo "${ERR} Row count is outside the allowed range (100 - 20k)." >&2
   exit 1
 fi
@@ -91,6 +90,7 @@ readonly file_C="${dir}"'/gbc-census-C.csv'
 readonly file_CG="${dir}"'/gbc-census-CG.csv'
 readonly file_CH="${dir}"'/gbc-census-CH.csv'
 readonly file_X="${dir}"'/gbc-census-X.csv'
+files=("${file_C}" "${file_CG}" "${file_CH}" "${file_X}")
 # Temporary array buffers (for each serial group)
 rows_C=()
 rows_CG=()
@@ -103,7 +103,7 @@ rows_X=() # All other serial rows
 #  and change the text `Timestamp` to `Date`
 header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
 # Create the files with header row
-for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
+for file in "${files[@]}"; do
   printf '%s\n' "$header" > "${file}" \
     || { echo "${ERR} Failed writing to file: '${file}'." >&2; exit 1; }
 done
@@ -156,7 +156,7 @@ readonly copyright='Copyright (C) Andrew C.E. Dent 2022'
 date_full=$(date '+%F')
 date_year=$(date '+%Y')
 # Append footer to file(s)
-for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
+for file in "${files[@]}"; do
   {
     printf ',,,,,,\n'
     printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
@@ -169,15 +169,16 @@ done
 
 # Check output: Verify split-row counts match original total
 total_out_rows=0
-for file in "${file_C}" "${file_CG}" "${file_CH}" "${file_X}"; do
+for file in "${files[@]}"; do
   if [[ ! -r "${file}" ]]; then
-    echo "${ERR} Output file is missing or unreadable: $file" >&2
+    echo "${ERR} Output file is missing or unreadable: ${file}" >&2
     exit 1
   fi
   count=$(( $(wc -l < "${file}") -1 -5 )) # Subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
-if [[ "${total_out_rows}" -ne "${row_count}" ]]; then
+
+if (( total_out_rows != row_count )); then
   echo "${ERR} Total output rows (${total_out_rows}) does not match input (${row_count})!" >&2
   exit 1
 else
