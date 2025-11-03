@@ -8,7 +8,7 @@ The census collects the following information for each device:
 - **Serial number** – The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
 - **Model** – The model shown on the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible or absent, marked as 'Missing'. If a replica label is detected, it is marked as 'Reproduction'.
 - **PCB #** – PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
-- **Panel (A-B)** – The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). These silk-screened numbers identify the individual PCB panel, used for traceability during manufacturing. If a digit is unclear, it is marked with `?`. The occasional printing errors observed, are replicated with double-struck digits `𝟘–𝟡`.
+- **Panel (A-B)** – The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). These silk-screened numbers identify the individual PCB panel, used for traceability during manufacturing. If a digit is unclear, it is marked with `?`. The occasional printing errors observed, are replicated with double-struck digits `𝟙`, `𝟚`, etc.
 - **Shell** – The design style of the shell (details [here](gbc-shells.md)).
 - **Source** – Origin of the data. Normally the country code (ISO 3166-1 alpha-2), followed by the website.
 
@@ -31,12 +31,12 @@ Much of the time and effort is devoted to ensuring the accuracy of the data set.
 Sampling progress toward the census target, shown by serial range:
 
 ```text
-C   —  56% ▕██████████████           ▏  1357 / 2400
-CG1 —  19% ▕████▊                    ▏   307 / 1600
-CG5 —  20% ▕█████                    ▏   495 / 2400
-CH  —  42% ▕██████████▌              ▏  1289 / 3000
+C   —  57% ▕██████████████▎          ▏  1381 / 2400
+CG1 —  20% ▕█████                    ▏   330 / 1600
+CG5 —  22% ▕█████▌                   ▏   538 / 2400
+CH  —  43% ▕██████████▊              ▏  1297 / 3000
 
-All —  35% ▕████████▊                ▏  3572 / 10k
+All —  36% ▕█████████                ▏  3678 / 10k
 ```
 
 
@@ -46,9 +46,9 @@ Data collection has been biased toward the author's own region, and may not full
 
 ```mermaid
 pie title Source regions
-    "UK" : 38
+    "UK" : 37
     "JP" : 29
-    "US" : 25
+    "US" : 26
     "Other" : 8
 ```
 
@@ -77,5 +77,6 @@ Releases are tracked by a revision number `R01234` – a cumulative row count, r
 2025-05-31, R03410
 2025-06-06, R03516
 2025-09-05, R03572
+2025-11-03, R03678
 ```
 
