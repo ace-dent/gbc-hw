@@ -67,12 +67,10 @@ readonly row_a='2025-06-17,C10003149,'
 readonly row_z='2024-10-31,POB 24237,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
-last_line=$(tail -n1 "$1")
-if [[ -z "${last_line//[[:space:]]/}" ]]; then
+last_data_row=$(tail -n1 "$1")
+if [[ -z "${last_data_row//[[:space:]]/}" ]]; then
   # Skip the blank footer line and read penultimate row (n-1)
   last_data_row=$(sed -n "${row_count}p" "$1")
-else
-  last_data_row="${last_line}"
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
   echo "${ERR} First row of data doesn't match expected value: '${row_a}'." >&2
@@ -86,11 +84,11 @@ fi
 
 # Files to be created
 dir="$(dirname "${BASH_SOURCE[0]}")/.."
-readonly file_C="${dir}"'/gbc-census-C.csv'
-readonly file_CG="${dir}"'/gbc-census-CG.csv'
-readonly file_CH="${dir}"'/gbc-census-CH.csv'
-readonly file_X="${dir}"'/gbc-census-X.csv'
-files=("${file_C}" "${file_CG}" "${file_CH}" "${file_X}")
+readonly file_C="${dir}/gbc-census-C.csv"
+readonly file_CG="${dir}/gbc-census-CG.csv"
+readonly file_CH="${dir}/gbc-census-CH.csv"
+readonly file_X="${dir}/gbc-census-X.csv"
+readonly files=("${file_C}" "${file_CG}" "${file_CH}" "${file_X}")
 # Temporary array buffers (for each serial group)
 rows_C=()
 rows_CG=()
@@ -115,7 +113,7 @@ done
 for i in {2..6}; do
   sed -i '' "s/,0$i,/,\"0$i\",/g" "$1"
 done
-
+# TODO: Make cross-platform (avoid `sed -i '' `).
 
 # Place each CSV row into the correct serial group, skipping the header
 while IFS=, read -r date serial other_columns; do
@@ -167,7 +165,7 @@ for file in "${files[@]}"; do
 done
 
 
-# Check output: Verify split-row counts match original total
+# Check output: Verify separate row counts match original total
 total_out_rows=0
 for file in "${files[@]}"; do
   if [[ ! -r "${file}" ]]; then
