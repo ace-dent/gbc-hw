@@ -24,25 +24,25 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
 | `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | Americas | 1999, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv). |
-| `💙 SE Pokemon w/ Meowth yellow/blue 😼` | AU, NZ | 1999, serial: [`C`](../gbc-census-C.csv). |
-| `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe | 2001, serial: [`CH`](../gbc-census-CH.csv). |
+| `💙 SE Pokemon w/ Meowth yellow/blue 😼` | AU, NZ | 1999, serials: [`C`](../gbc-census-C.csv). |
+| `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe | 2001, serials: [`CH`](../gbc-census-CH.csv). |
 | `🩶 SE Pokemon w/ Pichu gold-silver ⚡️` | Americas, AU, NZ | 2001, serials: [`CG`](../gbc-census-CG.csv), [`CH`](../gbc-census-CH.csv). |
-| `SE Pokemon w/ Meowth translucent blue/white` |  HK | 1999, serial: [`CH`](../gbc-census-CH.csv). |
-| `SE Pokemon w/ Meowth translucent green/white` | TW | 1999, serial: [`C`](../gbc-census-C.csv). |
-| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | JP | 1999, serial: [`X`](../gbc-census-X.csv). |
-| `🩶 SE Pokemon Center gold-silver` | JP | 1999, serial: [`X`](../gbc-census-X.csv). |
+| `SE Pokemon w/ Meowth translucent blue/white` |  HK | 1999, serials: [`CH`](../gbc-census-CH.csv). |
+| `SE Pokemon w/ Meowth translucent green/white` | TW | 1999, serials: [`C`](../gbc-census-C.csv). |
+| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | JP | 1999, serials: [`POB`](../gbc-census-X.csv). |
+| `🩶 SE Pokemon Center gold-silver` | JP | 1999, serials: [`PD`](../gbc-census-X.csv). |
 
 
 ## Opaque, branded special editions
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `🌸 SE Hello Kitty w/ flower pink` | Japan |
-| `🎀 SE Hello Kitty w/ bow pink` | Japan |
-| `💮 SE Cardcaptor Sakura white/pink` | Japan |
-| `SE Tommy Hilfiger yellow` | N.America |
-| `SE Doraemon 20th Anniv' teal` | Japan |
-| `SE Panasonic Alkaline grape` | Japan |
+| `🌸 SE Hello Kitty w/ flower pink` | JP | 1998, serials: [`C`](../gbc-census-C.csv). |
+| `🎀 SE Hello Kitty w/ bow pink` | JP | 2000, serials: [`C`](../gbc-census-C.csv). |
+| `💮 SE Cardcaptor Sakura white/pink` | JP | 2000, serials: [`CWP`](../gbc-census-X.csv). |
+| `SE Tommy Hilfiger yellow` | N.America | 1999, serials: [`CG`](../gbc-census-CG.csv). |
+| `SE Doraemon 20th Anniv' teal` | JP | 2000, serials: [`C`](../gbc-census-C.csv). |
+| `SE Panasonic Alkaline grape` | JP | 1999, serials: [`C`](../gbc-census-C.csv). |
 
 
 ## Translucent, branded special editions
