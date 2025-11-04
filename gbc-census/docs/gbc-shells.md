@@ -10,66 +10,66 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 | Style                  | Regions          | Comment |
 | :--------------------- | :--------------- | :------ |
-| `🩷 Berry`             | World            | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `💛 Dandelion`         | World            | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `💚 Kiwi`              | World, exc. JP   | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `🩵 Teal`              | World            | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `💜 Grape`             | World            | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `💟 Atomic purple`     | World            | 1998, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
-| `🤍 Clear translucent` | JP, Asia-Pacific | 1998, serials: [`C`](../gbc-census-C.csv),[`CH`](../gbc-census-CH.csv). |
+| `🩷 Berry`             | World            | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `💛 Dandelion`         | World            | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `💚 Kiwi`              | World, exc. JP   | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `🩵 Teal`              | World            | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `💜 Grape`             | World            | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `💟 Atomic purple`     | World            | 1998, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv),[`CH`](../gbc-census-CH.csv). |
+| `🤍 Clear translucent` | JP, Asia-Pacific | 1998, series: [`C`](../gbc-census-C.csv),[`CH`](../gbc-census-CH.csv). |
 
 
 ## Pokémon special editions
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | Americas | 1999, serials: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv). |
-| `💙 SE Pokemon w/ Meowth yellow/blue 😼` | AU, NZ | 1999, serial: [`C`](../gbc-census-C.csv). |
-| `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe | 2001, serial: [`CH`](../gbc-census-CH.csv). |
-| `🩶 SE Pokemon w/ Pichu gold-silver ⚡️` | Americas, AU, NZ | 2001, serials: [`CG`](../gbc-census-CG.csv), [`CH`](../gbc-census-CH.csv). |
-| `SE Pokemon w/ Meowth translucent blue/white` |  HK | 1999, serial: [`CH`](../gbc-census-CH.csv). |
-| `SE Pokemon w/ Meowth translucent green/white` | TW | 1999, serial: [`C`](../gbc-census-C.csv). |
-| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | JP | 1999, serial: [`X`](../gbc-census-X.csv). |
-| `🩶 SE Pokemon Center gold-silver` | JP | 1999, serial: [`X`](../gbc-census-X.csv). |
+| `💙 SE Pokemon w/ Togepi yellow/blue 🥚` | Americas | 1999, series: [`C`](../gbc-census-C.csv),[`CG`](../gbc-census-CG.csv). |
+| `💙 SE Pokemon w/ Meowth yellow/blue 😼` | AU, NZ | 1999, series: [`C`](../gbc-census-C.csv). |
+| `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe | 2001, series: [`CH`](../gbc-census-CH.csv). |
+| `🩶 SE Pokemon w/ Pichu gold-silver ⚡️` | Americas, AU, NZ | 2001, series: [`CG`](../gbc-census-CG.csv), [`CH`](../gbc-census-CH.csv). |
+| `SE Pokemon w/ Meowth translucent blue/white` |  HK | 1999, series: [`CH`](../gbc-census-CH.csv). |
+| `SE Pokemon w/ Meowth translucent green/white` | TW | 1999, series: [`C`](../gbc-census-C.csv). |
+| `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | JP | 1999, series: [`POB`](../gbc-census-X.csv). |
+| `🩶 SE Pokemon Center gold-silver` | JP | 1999, series: [`PD`](../gbc-census-X.csv). |
 
 
 ## Opaque, branded special editions
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `🌸 SE Hello Kitty w/ flower pink` | Japan |
-| `🎀 SE Hello Kitty w/ bow pink` | Japan |
-| `💮 SE Cardcaptor Sakura white/pink` | Japan |
-| `SE Tommy Hilfiger yellow` | N.America |
-| `SE Doraemon 20th Anniv' teal` | Japan |
-| `SE Panasonic Alkaline grape` | Japan |
+| `🌸 SE Hello Kitty w/ flower pink` | JP | 1998, series: [`C`](../gbc-census-C.csv). |
+| `🎀 SE Hello Kitty w/ bow pink` | JP | 2000, series: [`C`](../gbc-census-C.csv). |
+| `💮 SE Cardcaptor Sakura white/pink` | JP | 2000, series: [`CWP`](../gbc-census-X.csv). |
+| `SE Tommy Hilfiger yellow` | N.America | 1999, series: [`CG`](../gbc-census-CG.csv). |
+| `SE Doraemon 20th Anniv' teal` | JP | 2000, series: [`C`](../gbc-census-C.csv). |
+| `SE Panasonic Alkaline grape` | JP | 1999, series: [`C`](../gbc-census-C.csv). |
 
 
 ## Translucent, branded special editions
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `🍒 SE Sakura Wars translucent cherry` | Japan |
-| `🍊 SE Mirinda translucent orange` | Mexico |
-| `🍊 SE Yedigun translucent orange` | Turkey |
-| `SE Ozzie! translucent green/yellow` | Australia, New Zealand |
-| `✈️ SE ANA translucent blue` | Japan |
-| `SE Jusco w/ Mario atomic purple` | Japan |
-| `SE Jusco w/ Mario clear translucent` | Japan |
+| `🍒 SE Sakura Wars translucent cherry` | JP | series: [`C`](../gbc-census-C.csv). |
+| `🍊 SE Mirinda translucent orange` | MX | series: [`C`](../gbc-census-C.csv). |
+| `🍊 SE Yedigun translucent orange` | TR | series: [`C`](../gbc-census-C.csv). |
+| `SE Ozzie! translucent green/yellow` | AU, NZ | series: [`C`](../gbc-census-C.csv). |
+| `✈️ SE ANA translucent blue` | JP | series: [`C`](../gbc-census-C.csv). |
+| `SE Jusco w/ Mario atomic purple` | JP | series: [`C`](../gbc-census-C.csv). |
+| `SE Jusco w/ Mario clear translucent` | JP | series: [`C`](../gbc-census-C.csv). |
 
 
 ## Translucent, unbranded special editions
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `SE Daiei Hawks translucent orange/black` | Japan |
-| `SE Toys'R'Us translucent green` | Japan |
-| `💧 SE transparent water blue` | Singapore, Malaysia, Indonesia |
-| `SE Tsutaya translucent blue, yellow buttons` | Japan |
-| `❄️ SE translucent ice blue` | Japan, Australia |
-| `SE Lawson translucent blue/clear` | Japan |
-| `SE Toys'R'Us translucent midnight blue-purple` | Japan |
-| `🖤 SE Eiden translucent black` | Japan |
+| `SE Daiei Hawks translucent orange/black` | JP | series: [`C`](../gbc-census-C.csv). |
+| `SE Toys'R'Us translucent green` | JP | series: [`C`](../gbc-census-C.csv). |
+| `💧 SE transparent water blue` | SG, MY, ID | series: [`CH`](../gbc-census-CH.csv). |
+| `SE Tsutaya translucent blue, yellow buttons` | JP | series: [`C`](../gbc-census-C.csv). |
+| `❄️ SE translucent ice blue` | JP, AU | series: [`C`](../gbc-census-C.csv). |
+| `SE Lawson translucent blue/clear` | JP | series: [`C`](../gbc-census-C.csv). |
+| `SE Toys'R'Us translucent midnight blue-purple` | JP | series: [`C`](../gbc-census-C.csv). |
+| `🖤 SE Eiden translucent black` | JP | series: [`C`](../gbc-census-C.csv). |
 
 
 <hr>
