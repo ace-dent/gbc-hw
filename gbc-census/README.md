@@ -2,7 +2,7 @@
 
 A census of Game Boy Color 'CGB' devices. This data was manually scraped over a few years.
 
-<img src="docs/gbc-mundo.jpg" width="60%" alt="World filled with Game Boy Color">
+<img src="docs/gbc-mundo.png" width="80%" alt="World of Game Boy Color devices">
 
 <hr>
 
