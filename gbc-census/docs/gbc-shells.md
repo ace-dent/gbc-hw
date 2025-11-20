@@ -89,5 +89,3 @@ For alternative licensing arrangements, commercial use, or other permissions, pl
 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img width="88" height="31" align="left" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="">
 </a>
-
-**© 2022–2025 Andrew C.E. Dent**.

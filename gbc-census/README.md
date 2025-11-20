@@ -2,9 +2,10 @@
 
 A census of Game Boy Color 'CGB' devices. This data was manually scraped over a few years.
 
-<img src="docs/gbc-mundo.jpg" width="60%" alt="World filled with Game Boy Color">
+<img src="docs/gbc-mundo.png" width="60%" alt="A world of Game Boy Color devices">
 
 <hr>
+
 
 The data is sorted by serial number and split by prefix into four CSV files:
 - `C` series: Made in Japan, distributed in Japan and internationally ([here](gbc-census-C.csv)).
@@ -35,5 +36,3 @@ For alternative licensing arrangements, commercial use, or other permissions, pl
 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img width="88" height="31" align="left" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="">
 </a>
-
-**© 2022–2025 Andrew C.E. Dent**.
