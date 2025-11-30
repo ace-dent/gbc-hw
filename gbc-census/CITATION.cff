@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: gbc-census
+message: >-
+  If you use this dataset, please cite it using the metadata from this file.
+type: dataset
+authors:
+  - given-names: Andrew C E
+    family-names: Dent
+    email: hi@aced.cafe
+    orcid: 'https://orcid.org/0009-0000-7116-2494'
+repository-code: 'https://github.com/ace-dent/gbc-hw/tree/main/gbc-census'
+abstract: >-
+  Census of Game Boy Color (CGB) devices. Arranged by serial number, this dataset highlights the 6 internal hardware revisions and the external shell designs, released over the product's lifecycle.
+keywords:
+  - gameboy
+  - game-boy-color
+  - nintendo
+  - census
+license: CC-BY-NC-SA-4.0
+version: "R03678"
+date-released: '2025-11-03'
