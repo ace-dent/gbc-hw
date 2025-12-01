@@ -9,6 +9,7 @@
 #
 # Requirements:
 #   - Bash v3.0+
+#   - Optional: yq (updates citation.cff yaml file)
 #
 # Assumptions:
 #   - Filenames and directory structures follow the project standard.
@@ -62,9 +63,8 @@ if (( row_count < 100 || row_count > 20000 )); then
 fi
 
 # Check 'signature': first and last rows of input data match known values
-#   Fill these in to match the dataset exactly (including commas)
-readonly row_a='2025-06-17,C10003149,'
-readonly row_z='2024-10-31,POB 24237,'
+readonly row_a='2025-06-17,C10003149,CGB-JPN,'
+readonly row_z='2024-10-31,POB 24237,CGB-POB-JPN,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
 last_data_row=$(tail -n1 "$1")
@@ -73,11 +73,11 @@ if [[ -z "${last_data_row//[[:space:]]/}" ]]; then
   last_data_row=$(sed -n "${row_count}p" "$1")
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
-  echo "${ERR} First row of data doesn't match expected value: '${row_a}'." >&2
+  echo "${ERR} First row of data doesn't begin with: '${row_a}'." >&2
   exit 1
 fi
 if [[ "${last_data_row}" != ${row_z}* ]]; then
-  echo "${ERR} Last row of data doesn't match expected value: '${row_z}'." >&2
+  echo "${ERR} Last row of data doesn't begin with: '${row_z}'." >&2
   exit 1
 fi
 
@@ -131,8 +131,16 @@ while IFS=, read -r date serial other_columns; do
     'POB '[0-9]*)
       rows_POB+=("${row}")
       ;;
-    *)
+    'CWP '[0-9]*)
       rows_X+=("${row}")
+      ;;
+    PD[0-9]*)
+      rows_X+=("${row}")
+      ;;
+    *)
+      # Ignore BR distributor Gradiente Entertainment: 123456789A1B
+      # Ignore: AU12345678
+      echo "${WARN} skipped '${row}'" >&2
       ;;
   esac
 done < <(tail -n +2 "$1")
@@ -183,6 +191,14 @@ else
   echo "${row_count} rows split into corresponding CSV files."
 fi
 
+# Optionally update CITATION.cff yaml file with the release details
+if command -v 'yq' &> /dev/null; then
+  env VERSION="R0${row_count}" DATE="${date_full}" \
+    yq -i '
+      .version = strenv(VERSION) |
+      .date-released = strenv(DATE)
+    ' "${dir}/CITATION.cff"
+fi
 
 echo " ...Finished! ${DONE}"
 echo ''
