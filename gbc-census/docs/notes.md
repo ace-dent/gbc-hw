@@ -31,12 +31,12 @@ Much of the time and effort is devoted to ensuring the accuracy of the data set.
 Sampling progress toward the census target, shown by serial range:
 
 ```text
-C   —  57% ▕██████████████▎          ▏  1381 / 2400
-CG1 —  20% ▕█████                    ▏   330 / 1600
-CG5 —  22% ▕█████▌                   ▏   538 / 2400
-CH  —  43% ▕██████████▊              ▏  1297 / 3000
+C   —  61% ▕███████████████▎         ▏  1481 / 2400
+CG1 —  25% ▕██████▎                  ▏   413 / 1600
+CG5 —  28% ▕███████                  ▏   680 / 2400
+CH  —  45% ▕███████████▎             ▏  1368 / 3000
 
-All —  36% ▕█████████                ▏  3678 / 10k
+All —  40% ▕██████████               ▏  4092 / 10k
 ```
 
 
@@ -46,9 +46,9 @@ Data collection has been biased toward the author's own region, and may not full
 
 ```mermaid
 pie title Source regions
-    "UK" : 37
-    "JP" : 29
-    "US" : 26
+    "UK" : 34
+    "JP" : 28
+    "US" : 30
     "Other" : 8
 ```
 
@@ -78,5 +78,6 @@ Releases are tracked by a revision number `R01234` – a cumulative row count, r
 2025-06-06, R03516
 2025-09-05, R03572
 2025-11-03, R03678
+2025-12-02, R04092
 ```
 
