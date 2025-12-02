@@ -4,13 +4,13 @@
 
 The census collects the following information for each device:
 
-- **Date** – When the unit was first observed and data collected.
 - **Serial number** – The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
 - **Model** – The model shown on the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible or absent, marked as 'Missing'. If a replica label is detected, it is marked as 'Reproduction'.
 - **PCB #** – PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
 - **Panel (A-B)** – The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). These silk-screened numbers identify the individual PCB panel, used for traceability during manufacturing. If a digit is unclear, it is marked with `?`. The occasional printing errors observed, are replicated with double-struck digits `𝟙`, `𝟚`, etc.
 - **Shell** – The design style of the shell (details [here](gbc-shells.md)).
 - **Source** – Origin of the data. Normally the country code (ISO 3166-1 alpha-2), followed by the website.
+- **Date** – When the unit was first observed and data collected.
 
 
 ## Sampling
