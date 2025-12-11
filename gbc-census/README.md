@@ -1,6 +1,6 @@
 # gbc-census
 
-A census of Game Boy Color 'CGB' devices. This data was manually scraped over a few years.
+Worldwide census of Game Boy Color (CGB) devices. Arranged by serial number, this dataset highlights the 6 internal hardware revisions and the external shell designs, released over the product's lifecycle.
 
 <img src="docs/gbc-mundo.png" width="60%" alt="A world of Game Boy Color devices">
 
@@ -11,7 +11,7 @@ The data is sorted by serial number and split by prefix into four CSV files:
 - `C` series: Made in Japan, distributed in Japan and internationally ([here](gbc-census-C.csv)).
 - `CG` series: Made in Japan and China for North America ([here](gbc-census-CG.csv)).
 - `CH` series: Made in China, distributed internationally ([here](gbc-census-CH.csv)).
-- `X` series: Promotional units ([here](gbc-census-X.csv)).  
+- `X` series: Promotional units ([here](gbc-census-X.csv)).
 
 I welcome feedback and suggestions, to continue improving the project for everyone. It really motivates me that people enjoy my work. Please keep the data gnomes fed with a [star](https://github.com/ace-dent/gbc-hw/stargazers)! ⭐️
 
