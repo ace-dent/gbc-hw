@@ -1,4 +1,4 @@
-Serial number ,Model,PCB #,Panel (A-B),Shell,CPU,Silk start date,Silk end date,PCB Stamp,Chip Made,PCB Made,Assembled,Source
+Serial number,Production,PCB #,Panel (A-B),Shell,CPU,Silk start date,Silk end date,PCB Stamp,Chip Made,PCB Made,Assembled,Source
 C10203977,CGB-JPN,Blank,1-2,💜 Grape,0-9835,J3-08-1998,J1-09-1998,398-1902,1998-W35,1998-W36,1998-W39,gbhwdb.gekkio.fi
 C10339903,CGB-EUR,Blank,1-2,💜 Grape,B-9837,J3-08-1998,J2-09-1998,408-1902,1998-W37,1998-W38,1998-W40,gbhwdb.gekkio.fi
 C10342618,CGB-EUR,Blank,2-1,💜 Grape,B-9837,J1-09-1998,J1-09-1998,408-1902,1998-W37,1998-W36,1998-W40,gbhwdb.gekkio.fi
@@ -13,7 +13,7 @@ C13780256,CGB-JPN-1,03,1-1,🤍 Clear translucent,B-9852,J1-11-1998,J2-12-1998,�
 C16416396,CGB-JPN-1,04,1-1,💟 Atomic purple,C-9939,J1-01-1999,J3-08-1999,409-1243,1999-W39,1999-W35,1999-W40,gbhwdb.gekkio.fi
 C16430148,CGB-JPN-1,04,1-2,💛 Dandelion,C-9940,–,J1-10-1999,449-0701,1999-W40,1999-W41,1999-W44,AU eBay
 C17541747,CGB-JPN-1,04,1-2,💜 Grape,–,J1-01-1999,J3-11-1999,030-1900,–,1999-W48,2000-W03,UK eBay
-C18841471,CGB-JPN-1,04,1-2,💟 Atomic purple,D-0010,J1-01-2000,J2-02-2000,110-2217,2000-W10,2000-W8,2000-W11,gbhwdb.gekkio.fi
+C18841471,CGB-JPN-1,04,1-2,💟 Atomic purple,D-0010,J1-01-2000,J2-02-2000,110-2217,2000-W10,2000-W08,2000-W11,gbhwdb.gekkio.fi
 C19220030,CGB-JPN-1,04,1-1,🤍 Clear translucent,D-0015,J1-01-2000,J2-03-2000,170-1918,2000-W15,2000-W12,2000-W17,gbhwdb.gekkio.fi
 C19796084,CGB-JPN-2,04,5-2,❄️ SE translucent ice blue,D-0010,–,–,–,2000-W10,–,–,JP eBay
 C20253140,CGB-JPN-2,05,?-?,🩷 Berry,D-0036,–,–,–,2000-W36,–,–,US eBay
@@ -25,16 +25,18 @@ CG100048933,CGB-JPN,Blank,1-2,💜 Grape,0-9832,J1-01-1998,J3-08-1998,378-2033,1
 CG103672838,CGB-JPN-1,Blank,1-2,💟 Atomic purple,B-9840,J1-01-1998,J2-09-1998,438-2240,1998-W40,1998-W38,1998-W43,gbhwdb.gekkio.fi
 CG123449052,CGB-JPN-1,03,1-2,💛 Dandelion,C-9918,J1-01-1999,J1-04-1999,209-0030,1999-W18,1999-W15,1999-W20,gbhwdb.gekkio.fi
 CG131373899,CGB-JPN-1,03,1-2,SE Tommy Hilfiger yellow,C-9922,–,–,–,1999-W22,–,–,US eBay
+CG136832148,CGB-POB-JPN-1,03,1-1,💙 SE Pokemon w/ Togepi yellow/blue 🥚,C-9932,–,–,–,1999-W32,–,–,CA eBay
 CG147653060,CGB-JPN-1,04,1-1,🩵 Teal,C-9941,–,–,–,1999-W41,–,–,US eBay
 CG161643696,CGB-JPN-2,04,11-1,🩵 Teal,D-0021,–,–,–,2000-W21,–,–,US eBay
 CG163285177,CGB-JPN-2,04,1-2,🩵 Teal,D-0022,J1-01-2000,J2-05-2000,230-3419,2000-W22,2000-W21,2000-W23,gbhwdb.gekkio.fi
+CG166834785,CGB-JPN-2,04,5-1,💟 Atomic purple,D-0026,J1-01-2000,J2-05-2000,280-0701,2000-W26,2000-W21,2000-W28,US YouTube
 CG514888705,C/CGB-JPN-1,03,2-2,🩵 Teal,C-9917,–,–,–,1999-W17,–,–,US eBay
-CG550297110,C/CGB-JPN-1,04,2-2,💚 Kiwi,C-0005,J2-01-2000,J2-01-2000,090-3702,2000-W05,2000-W3,2000-W09,US @tlayne
+CG550297110,C/CGB-JPN-1,04,2-2,💚 Kiwi,C-0005,J2-01-2000,J2-01-2000,090-3702,2000-W05,2000-W03,2000-W09,US @tlayne
 CG586896783,C/CGB-JPN-2,05,2-7,💛 Dandelion,D-0043,–,–,–,2000-W43,–,–,US eBay
 CG594303860,C/CGB-JPN-2,05,2-2,💛 Dandelion,?,J1-11-2000,J1-11-2000,520-3702,–,2000-W46,2000-W52,gbhwdb.gekkio.fi
 CG595691652,Missing,05,1-6,💚 Kiwi,D-0051,–,–,–,2000-W51,–,–,US eBay
 CG601336782,C/CGB-JPN-2,05,2-4,💟 Atomic purple,D-0051,J2-12-2000,J2-12-2000,021-3702,2000-W51,2000-W51,2001-W02,gbhwdb.gekkio.fi
-CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,J2-11-1998,128-3702,1998-W45,1998-W47,1998-W12,gbhwdb.gekkio.fi
+CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,J2-11-1998,812-3702,1998-W45,1998-W47,1998-W50,gbhwdb.gekkio.fi
 CH12159154,C/CGB-EUR,04,1-1,💜 Grape,C-9936,–,–,–,1999-W36,–,–,UK eBay
 CH15080008,C/CGB-EUR,04,4-1,💚 Kiwi,D-0017,J3-03-2000,J3-03-2000,–,2000-W17,2000-W13,–,GR @Matthaios-Bobolis #6
 CH15382743,Missing,04,1-1,🩵 Teal,D-0021,–,–,–,2000-W21,–,–,US eBay
@@ -51,8 +53,8 @@ CH23080280,Missing,05,?-?,💟 Atomic purple,D-0102,–,–,–,2001-W02,–,–
 CH24224683,C/CGB-JPN-2,06,1-1,💟 Atomic purple,E-0140,J2-10-2001,J2-10-2001,451-3702,2001-W40,2001-W42,2001-W45,gbhwdb.gekkio.fi
 PD10035458,CGB-POB-JPN-1,04,5-2,🩶 SE Pokemon Center gold-silver,D-0017,–,–,–,2000-W17,–,–,JP eBay
 ,,,,,,,,,,,,
-,,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025. 
-,,,,,,,,,,,, This work is licensed under CC BY-NC-SA. See: 
-,,,,,,,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ 
-,,,,,,,,,,,, Provided “as is”- without warranty of any kind. 
-,,,,,,,,,,,, (Release: 2025-12-01 / R04092) 
+,,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025.
+,,,,,,,,,,,, This work is licensed under CC BY-NC-SA. See:
+,,,,,,,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/
+,,,,,,,,,,,, Provided “as is”- without warranty of any kind.
+,,,,,,,,,,,, (Release: 2025-12-14 / R04318)
