@@ -5,7 +5,7 @@
 The census collects the following information for each device:
 
 - **Serial number** – The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
-- **Model** – The model shown on the larger rear label (e.g. `C/CGB-EUR`). When not clearly visible or absent, marked as 'Missing'. If a replica label is detected, it is marked as 'Reproduction'.
+- **Production** – The production code on the larger rear label (e.g. `C/CGB-EUR`). This can provide information on _where_ the device was produced (e.g. `C/` for China), _when_ (e.g. `-2`), or indicates a _special edition_ (e.g. `-POB`). Marked as 'Missing' when it is not clearly visible or absent. If a reproduction label is detected, it is marked as a 'Replica'.
 - **PCB #** – PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
 - **Panel (A-B)** – The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). These silk-screened numbers identify the individual PCB panel, used for traceability during manufacturing. If a digit is unclear, it is marked with `?`. The occasional printing errors observed, are replicated with double-struck digits `𝟙`, `𝟚`, etc.
 - **Shell** – The design style of the shell (details [here](gbc-shells.md)).
@@ -31,25 +31,25 @@ Much of the time and effort is devoted to ensuring the accuracy of the data set.
 Sampling progress toward the census target, shown by serial range:
 
 ```text
-C   —  61% ▕███████████████▎         ▏  1481 / 2400
-CG1 —  25% ▕██████▎                  ▏   413 / 1600
-CG5 —  28% ▕███████                  ▏   680 / 2400
-CH  —  45% ▕███████████▎             ▏  1368 / 3000
+C   —  62% ▕███████████████▌         ▏  1501 / 2400
+CG1 —  30% ▕███████▌                 ▏   480 / 1600
+CG5 —  32% ▕████████                 ▏   786 / 2400
+CH  —  46% ▕███████████▌             ▏  1397 / 3000
 
-All —  40% ▕██████████               ▏  4092 / 10k
+All —  43% ▕██████████▊              ▏  4318 / 10k
 ```
 
 
 ## Limitations
 
-Data collection has been biased toward the author's own region, and may not fully reflect the global population. However, the UK market is likely indicative of the broader European region. While more international data will be added over time, some degree of regional bias may persist. Devices from North America are especially difficult to source, in part because the larger serial labels (with barcodes) are often missing or damaged.
+While more international data is added over time, some regional bias may persist. Devices from North America are more difficult to source, as the larger serial labels (with barcodes) are often missing or damaged. 
 
 ```mermaid
 pie title Source regions
-    "UK" : 34
-    "JP" : 28
-    "US" : 30
-    "Other" : 8
+    "UK" : 32
+    "JP" : 27
+    "US" : 32
+    "Other" : 9
 ```
 
 <hr>
@@ -79,5 +79,6 @@ Releases are tracked by a revision number `R01234` – a cumulative row count, r
 2025-09-05, R03572
 2025-11-03, R03678
 2025-12-02, R04092
+2025-12-14, R04318
 ```
 
