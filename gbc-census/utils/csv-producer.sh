@@ -89,35 +89,30 @@ readonly file_CG="${dir}/gbc-census-CG.csv"
 readonly file_CH="${dir}/gbc-census-CH.csv"
 readonly file_X="${dir}/gbc-census-X.csv"
 readonly files=("${file_C}" "${file_CG}" "${file_CH}" "${file_X}")
-# Temporary array buffers (for each serial group)
+# Temporary array buffers for each serial group, to reduce disk operations
 rows_C=()
 rows_CG=()
 rows_CH=()
 rows_POB=()
-rows_X=() # All other serial rows
+rows_X=()
 
 
-# Make sure the header fields have no trailing spaces
-#  and change the text `Timestamp` to `Date`
-header="$(head -n 1 "$1" | sed 's/ ,/,/g; s/Timestamp/Date/g')"
-# Create the files with header row
+# Create each file with header rows
 for file in "${files[@]}"; do
-  printf '%s\n' "$header" > "${file}" \
+  printf 'Serial number,Production,PCB #,Panel (A-B),Shell,Source,Date\n' > "${file}" \
     || { echo "${ERR} Failed writing to file: '${file}'." >&2; exit 1; }
 done
 
 
-# Enclose PCB numbers `,0n,` in double quotes `,"0n",` (n=2-6),
-#   to ensure they are treated as text fields when importing the CSV
-# We don't enclose implicit text fields, to save some bytes
-for i in {2..6}; do
-  sed -i '' "s/,0$i,/,\"0$i\",/g" "$1"
-done
-# TODO: Make cross-platform (avoid `sed -i '' `).
-
 # Place each CSV row into the correct serial group, skipping the header
-while IFS=, read -r date serial other_columns; do
-  row="${date},${serial},${other_columns}"
+while IFS=, read -r date serial production pcb other_columns; do
+  # Enclose PCB numbers `,0n,` in double quotes `,"0n",` (n=2-6),
+  #   to ensure they are treated as text fields when importing the CSV
+  if [[ "${pcb}" =~ ^0[2-6]$ ]]; then
+    pcb="\"${pcb}\""
+  fi
+  # Move date column to the end of each row
+  row="${serial},${production},${pcb},${other_columns},${date}"
   case "${serial}" in
     C[0-9]*)
       rows_C+=("${row}")
@@ -165,10 +160,12 @@ date_year=$(date '+%Y')
 for file in "${files[@]}"; do
   {
     printf ',,,,,,\n'
-    printf '%s, R%05u,,,,, %s-%u.\n' "${date_full}" "${row_count}" "${copyright}" "${date_year}"
-    printf '          ,       ,,,,, This work is licensed under CC BY-NC-SA. See:\n'
-    printf '          ,       ,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
-    printf '          ,       ,,,,, Provided “as is”- without warranty of any kind.\n'
+    # printf 'R%05u ,,,, %s-%u. ,,\n' "${row_count}" "${copyright}" "${date_year}"
+    printf ',,,,,, %s-%u. \n' "${copyright}" "${date_year}"
+    printf ',,,,,, This work is licensed under CC BY-NC-SA. See: \n'
+    printf ',,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ \n'
+    printf ',,,,,, Provided “as is”- without warranty of any kind. \n'
+    printf ',,,,,, (Release: %s / R%05u) \n' "${date_full}" "${row_count}"
   } >> "${file}"
 done
 
@@ -180,16 +177,16 @@ for file in "${files[@]}"; do
     echo "${ERR} Output file is missing or unreadable: ${file}" >&2
     exit 1
   fi
-  count=$(( $(wc -l < "${file}") -1 -5 )) # Subtract header and footer rows
+  count=$(( $(wc -l < "${file}") -1 -6 )) # Subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
-
 if (( total_out_rows != row_count )); then
   echo "${ERR} Total output rows (${total_out_rows}) does not match input (${row_count})!" >&2
   exit 1
 else
   echo "${row_count} rows split into corresponding CSV files."
 fi
+
 
 # Optionally update CITATION.cff yaml file with the release details
 if command -v 'yq' &> /dev/null; then
@@ -199,6 +196,7 @@ if command -v 'yq' &> /dev/null; then
       .date-released = strenv(DATE)
     ' "${dir}/CITATION.cff"
 fi
+
 
 echo " ...Finished! ${DONE}"
 echo ''
