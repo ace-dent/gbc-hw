@@ -1,60 +1,67 @@
-Serial number,Production,PCB #,Panel (A-B),Shell,CPU,Silk start date,Silk end date,PCB Stamp,Chip Made,PCB Made,Assembled,Source
-C10203977,CGB-JPN,Blank,1-2,💜 Grape,0-9835,J3-08-1998,J1-09-1998,398-1902,1998-W35,1998-W36,1998-W39,gbhwdb.gekkio.fi
-C10339903,CGB-EUR,Blank,1-2,💜 Grape,B-9837,J3-08-1998,J2-09-1998,408-1902,1998-W37,1998-W38,1998-W40,gbhwdb.gekkio.fi
-C10342618,CGB-EUR,Blank,2-1,💜 Grape,B-9837,J1-09-1998,J1-09-1998,408-1902,1998-W37,1998-W36,1998-W40,gbhwdb.gekkio.fi
-C10400331,CGB-JPN,Blank,5-1,🩷 Berry,A-9837,J3-08-1998,J1-09-1998,398-3419,1998-W37,1998-W36,1998-W39,gbhwdb.gekkio.fi
-C10410000,CGB-JPN,Blank,5-1,🩷 Berry,B-9838,J1-01-1998,J1-09-1998,398-3419,1998-W38,1998-W36,1998-W39,gbhwdb.gekkio.fi
-C10427204,CGB-JPN,Blank,5-2,🩷 Berry,B-9837,J1-09-1998,J1-09-1998,408-3419,1998-W37,1998-W36,1998-W40,gbhwdb.gekkio.fi
-C10909716,CGB-JPN-1,Blank,2-1,🤍 Clear translucent,B-9840,J1-01-1998,J2-09-1998,428-0701,1998-W40,1998-W38,1998-W42,gbhwdb.gekkio.fi
-C11204491,CGB-JPN-1,Blank,4-2,🩵 Teal,B-9841,J1-01-1998,J2-09-1998,428-2240,1998-W41,1998-W38,1998-W42,gbhwdb.gekkio.fi
-C11778414,CGB-JPN-1,02,1-1,🩵 Teal,B-9845,J1-01-1998,J1-10-1998,468-0030,1998-W45,1998-W41,1998-W46,gbhwdb.gekkio.fi
-C13374257,CGB-JPN-1,03,1-2,💟 Atomic purple,B-9850,J1-01-1998,J2-11-1998,518-2217,1998-W50,1998-W47,1998-W51,AU eBay
-C13780256,CGB-JPN-1,03,1-1,🤍 Clear translucent,B-9852,J1-11-1998,J2-12-1998,–,1998-W52,1998-W51,–,US eBay
-C16416396,CGB-JPN-1,04,1-1,💟 Atomic purple,C-9939,J1-01-1999,J3-08-1999,409-1243,1999-W39,1999-W35,1999-W40,gbhwdb.gekkio.fi
-C16430148,CGB-JPN-1,04,1-2,💛 Dandelion,C-9940,–,J1-10-1999,449-0701,1999-W40,1999-W41,1999-W44,AU eBay
-C17541747,CGB-JPN-1,04,1-2,💜 Grape,–,J1-01-1999,J3-11-1999,030-1900,–,1999-W48,2000-W03,UK eBay
-C18841471,CGB-JPN-1,04,1-2,💟 Atomic purple,D-0010,J1-01-2000,J2-02-2000,110-2217,2000-W10,2000-W08,2000-W11,gbhwdb.gekkio.fi
-C19220030,CGB-JPN-1,04,1-1,🤍 Clear translucent,D-0015,J1-01-2000,J2-03-2000,170-1918,2000-W15,2000-W12,2000-W17,gbhwdb.gekkio.fi
-C19796084,CGB-JPN-2,04,5-2,❄️ SE translucent ice blue,D-0010,–,–,–,2000-W10,–,–,JP eBay
-C20253140,CGB-JPN-2,05,?-?,🩷 Berry,D-0036,–,–,–,2000-W36,–,–,US eBay
-C20522758,CGB-JPN-2,05,?-2,SE Toys'R'Us translucent green,D-0048,–,–,–,2000-W48,–,–,JP eBay
-C20544825,CGB-JPN-2,05,2-5,🩷 Berry,D-0047,J2-11-2000,J2-11-2000,–,2000-W47,2000-W47,–,US eBay
-C21117841,CGB-JPN-2,05,9-1,💛 Dandelion,D-0049,J2-10-2000,J3-10-2000,500-2033,2000-W49,2000-W44,2000-W50,US eBay
-C21518015,CGB-JPN-2,06,5-1,💟 Atomic purple,E-0052,J1-01-2000,J2-12-2000,031-2240,2000-W52,2000-W51,2001-W03,gbhwdb.gekkio.fi
-CG100048933,CGB-JPN,Blank,1-2,💜 Grape,0-9832,J1-01-1998,J3-08-1998,378-2033,1998-W32,1998-W35,1998-W37,gbhwdb.gekkio.fi
-CG103672838,CGB-JPN-1,Blank,1-2,💟 Atomic purple,B-9840,J1-01-1998,J2-09-1998,438-2240,1998-W40,1998-W38,1998-W43,gbhwdb.gekkio.fi
-CG123449052,CGB-JPN-1,03,1-2,💛 Dandelion,C-9918,J1-01-1999,J1-04-1999,209-0030,1999-W18,1999-W15,1999-W20,gbhwdb.gekkio.fi
-CG131373899,CGB-JPN-1,03,1-2,SE Tommy Hilfiger yellow,C-9922,–,–,–,1999-W22,–,–,US eBay
-CG136832148,CGB-POB-JPN-1,03,1-1,💙 SE Pokemon w/ Togepi yellow/blue 🥚,C-9932,–,–,–,1999-W32,–,–,CA eBay
-CG147653060,CGB-JPN-1,04,1-1,🩵 Teal,C-9941,–,–,–,1999-W41,–,–,US eBay
-CG161643696,CGB-JPN-2,04,11-1,🩵 Teal,D-0021,–,–,–,2000-W21,–,–,US eBay
-CG163285177,CGB-JPN-2,04,1-2,🩵 Teal,D-0022,J1-01-2000,J2-05-2000,230-3419,2000-W22,2000-W21,2000-W23,gbhwdb.gekkio.fi
-CG166834785,CGB-JPN-2,04,5-1,💟 Atomic purple,D-0026,J1-01-2000,J2-05-2000,280-0701,2000-W26,2000-W21,2000-W28,US YouTube
-CG514888705,C/CGB-JPN-1,03,2-2,🩵 Teal,C-9917,–,–,–,1999-W17,–,–,US eBay
-CG550297110,C/CGB-JPN-1,04,2-2,💚 Kiwi,C-0005,J2-01-2000,J2-01-2000,090-3702,2000-W05,2000-W03,2000-W09,US @tlayne
-CG586896783,C/CGB-JPN-2,05,2-7,💛 Dandelion,D-0043,–,–,–,2000-W43,–,–,US eBay
-CG594303860,C/CGB-JPN-2,05,2-2,💛 Dandelion,?,J1-11-2000,J1-11-2000,520-3702,–,2000-W46,2000-W52,gbhwdb.gekkio.fi
-CG595691652,Missing,05,1-6,💚 Kiwi,D-0051,–,–,–,2000-W51,–,–,US eBay
-CG601336782,C/CGB-JPN-2,05,2-4,💟 Atomic purple,D-0051,J2-12-2000,J2-12-2000,021-3702,2000-W51,2000-W51,2001-W02,gbhwdb.gekkio.fi
-CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,J2-11-1998,812-3702,1998-W45,1998-W47,1998-W50,gbhwdb.gekkio.fi
-CH12159154,C/CGB-EUR,04,1-1,💜 Grape,C-9936,–,–,–,1999-W36,–,–,UK eBay
-CH15080008,C/CGB-EUR,04,4-1,💚 Kiwi,D-0017,J3-03-2000,J3-03-2000,–,2000-W17,2000-W13,–,GR @Matthaios-Bobolis #6
-CH15382743,Missing,04,1-1,🩵 Teal,D-0021,–,–,–,2000-W21,–,–,US eBay
-CH16096503,C/CGB-EUR,04,4-2,💛 Dandelion,D-0026,–,–,–,2000-W26,–,–,UK eBay
-CH16137820,C/CGB-EUR,04,1-1,💜 Grape,D-0026,J2-06-2000,J2-06-2000,280-3702,2000-W26,2000-W25,2000-W28,FR @ThibautPlg #5
-CH16904786,Missing,05,1-2,💟 Atomic purple,D-0029,–,–,–,2000-W29,–,–,US eBay
-CH18661294,Missing,05,?-?,💜 Grape,D-0037,–,–,–,2000-W37,–,–,AU eBay
-CH18787795,C/CGB-EUR,05,2-1,🩵 Teal,D-0038,J1-09-2000,J1-09-2000,410-3702,2000-W38,2000-W37,2000-W41,UK eBay
-CH20409368,C/CGB-EUR,05,2-6,🩵 Teal,D-0046,–,–,–,2000-W46,–,–,FR @3615Retro #3
-CH20811249,C/CGB-JPN-2,05,2-6,💟 Atomic purple,D-0047,J3-10-2000,J3-10-2000,490-8702,2000-W47,2000-W44,2000-W49,gbhwdb.gekkio.fi
-CH20983903,C/CGB-JPN-2,05,2-6,🩷 Berry,D-0049,J3-10-2000,J3-10-2000,490-3702,2000-W49,2000-W44,2000-W49,gbhwdb.gekkio.fi
-CH22908987,C/CGB-JPN-2,05,1-5,🩷 Berry,D-0103,J2-12-2000,J2-12-2000,061-3702,2001-W03,2000-W51,2001-W06,US eBay
-CH23080280,Missing,05,?-?,💟 Atomic purple,D-0102,–,–,–,2001-W02,–,–,US eBay
-CH24224683,C/CGB-JPN-2,06,1-1,💟 Atomic purple,E-0140,J2-10-2001,J2-10-2001,451-3702,2001-W40,2001-W42,2001-W45,gbhwdb.gekkio.fi
-PD10035458,CGB-POB-JPN-1,04,5-2,🩶 SE Pokemon Center gold-silver,D-0017,–,–,–,2000-W17,–,–,JP eBay
-,,,,,,,,,,,,
-,,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025.
-,,,,,,,,,,,, This work is licensed under CC BY-NC-SA. See:
-,,,,,,,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/
-,,,,,,,,,,,, Provided “as is”- without warranty of any kind.
-,,,,,,,,,,,, (Release: 2025-12-14 / R04318)
+Serial number,Production,PCB #,Panel (A-B),Shell,CPU,Silkscreen,PCB stamp,CPU made,PCB made,Assembled,Source
+C10203977,CGB-JPN,Blank,1-2,💜 Grape,0-9835,J1-09-1998,398-1902,1998-W35,1998-W36/37,1998-W39,gbhwdb.gekkio.fi
+C10339903,CGB-EUR,Blank,1-2,💜 Grape,B-9837,J2-09-1998,408-1902,1998-W37,1998-W37/38,1998-W40,gbhwdb.gekkio.fi
+C10342618,CGB-EUR,Blank,2-1,💜 Grape,B-9837,J1-09-1998,408-1902,1998-W37,1998-W36/37,1998-W40,gbhwdb.gekkio.fi
+C10400331,CGB-JPN,Blank,5-1,🩷 Berry,A-9837,J1-09-1998,398-3419,1998-W37,1998-W36/37,1998-W39,gbhwdb.gekkio.fi
+C10410000,CGB-JPN,Blank,5-1,🩷 Berry,B-9838,J1-09-1998,398-3419,1998-W38,1998-W36/37,1998-W39,gbhwdb.gekkio.fi
+C10427204,CGB-JPN,Blank,5-2,🩷 Berry,B-9837,J1-09-1998,408-3419,1998-W37,1998-W36/37,1998-W40,gbhwdb.gekkio.fi
+C10909716,CGB-JPN-1,Blank,2-1,🤍 Clear translucent,B-9840,J2-09-1998,428-0701,1998-W40,1998-W37/38,1998-W42,gbhwdb.gekkio.fi
+C11204491,CGB-JPN-1,Blank,4-2,🩵 Teal,B-9841,J2-09-1998,428-2240,1998-W41,1998-W37/38,1998-W42,gbhwdb.gekkio.fi
+C11778414,CGB-JPN-1,02,1-1,🩵 Teal,B-9845,J1-10-1998,468-0030,1998-W45,1998-W40/41,1998-W46,gbhwdb.gekkio.fi
+C13374257,CGB-JPN-1,03,1-2,💟 Atomic purple,B-9850,J2-11-1998,518-2217,1998-W50,1998-W46/47,1998-W51,AU eBay
+C13780256,CGB-JPN-1,03,1-1,🤍 Clear translucent,B-9852,J2-12-1998,–,1998-W52,1998-W50/51,–,US eBay
+C16416396,CGB-JPN-1,04,1-1,💟 Atomic purple,C-9939,J3-08-1999,409-1243,1999-W39,1999-W33/35,1999-W40,gbhwdb.gekkio.fi
+C16430148,CGB-JPN-1,04,1-2,💛 Dandelion,C-9940,J1-10-1999,449-0701,1999-W40,1999-W39/40,1999-W44,AU eBay
+C17541747,CGB-JPN-1,04,1-2,💜 Grape,–,J3-11-1999,030-1900,–,1999-W46/48,2000-W03,UK eBay
+C18841471,CGB-JPN-1,04,1-2,💟 Atomic purple,D-0010,J2-02-2000,110-2217,2000-W10,2000-W06/07,2000-W11,gbhwdb.gekkio.fi
+C19220030,CGB-JPN-1,04,1-1,🤍 Clear translucent,D-0015,J2-03-2000,170-1918,2000-W15,2000-W10/12,2000-W17,gbhwdb.gekkio.fi
+C19796084,CGB-JPN-2,04,5-2,❄️ SE translucent ice blue,D-0010,–,–,2000-W10,–,–,JP eBay
+C19863427,CGB-JPN-2,05,?-?,❄️ SE translucent ice blue,D-0027,–,–,2000-W27,–,–,JP eBay
+C20253140,CGB-JPN-2,05,?-?,🩷 Berry,D-0036,–,–,2000-W36,–,–,US eBay
+C20522758,CGB-JPN-2,05,?-2,SE Toys'R'Us translucent green,D-0048,–,–,2000-W48,–,–,JP eBay
+C20544825,CGB-JPN-2,05,2-5,🩷 Berry,D-0047,J2-11-2000,–,2000-W47,2000-W45/47,–,US eBay
+C21117841,CGB-JPN-2,05,9-1,💛 Dandelion,D-0049,J3-10-2000,500-2033,2000-W49,2000-W42/44,2000-W50,US eBay
+C21518015,CGB-JPN-2,06,5-1,💟 Atomic purple,E-0052,J2-12-2000,031-2240,2000-W52,2000-W50/51,2001-W03,gbhwdb.gekkio.fi
+CG100048933,CGB-JPN,Blank,1-2,💜 Grape,0-9832,J3-08-1998,378-2033,1998-W32,1998-W34/36,1998-W37,gbhwdb.gekkio.fi
+CG103672838,CGB-JPN-1,Blank,1-2,💟 Atomic purple,B-9840,J2-09-1998,438-2240,1998-W40,1998-W37/38,1998-W43,gbhwdb.gekkio.fi
+CG106445125,CGB-JPN-1,02,1-1,💟 Atomic purple,B-9844,J2-10-1998,458-2033,1998-W44,1998-W41/43,1998-W45,US eBay
+CG112353513,CGB-JPN-1,03,1-2,💜 Grape,B-9904,–,–,1999-W04,–,–,US eBay
+CG123449052,CGB-JPN-1,03,1-2,💛 Dandelion,C-9918,J1-04-1999,209-0030,1999-W18,1999-W13/14,1999-W20,gbhwdb.gekkio.fi
+CG131373899,CGB-JPN-1,03,1-2,SE Tommy Hilfiger yellow,C-9922,–,–,1999-W22,–,–,US eBay
+CG132034638,CGB-JPN-1,03,4-1,💛 Dandelion,C-9925,–,–,1999-W25,–,–,US eBay
+CG136832148,CGB-POB-JPN-1,03,1-1,💙 SE Pokemon w/ Togepi yellow/blue 🥚,C-9932,–,–,1999-W32,–,–,CA eBay
+CG147653060,CGB-JPN-1,04,1-1,🩵 Teal,C-9941,–,–,1999-W41,–,–,US eBay
+CG159260164,CGB-JPN-1,04,1-2,🩵 Teal,D-0017,–,–,2000-W17,–,–,US eBay
+CG161643696,CGB-JPN-2,04,11-1,🩵 Teal,D-0021,–,–,2000-W21,–,–,US eBay
+CG163285177,CGB-JPN-2,04,1-2,🩵 Teal,D-0022,J2-05-2000,230-3419,2000-W22,2000-W19/20,2000-W23,gbhwdb.gekkio.fi
+CG166834785,CGB-JPN-2,04,5-1,💟 Atomic purple,D-0026,J2-05-2000,280-0701,2000-W26,2000-W19/20,2000-W28,US YouTube
+CG514888705,C/CGB-JPN-1,03,2-2,🩵 Teal,C-9917,–,–,1999-W17,–,–,US eBay
+CG550297110,C/CGB-JPN-1,04,2-2,💚 Kiwi,C-0005,J2-01-2000,090-3702,2000-W05,2000-W02/03,2000-W09,US @tlayne
+CG577638088,C/CGB-JPN-2,05,2-8,💜 Grape,D-0038,J1-09-2000,400-3702,2000-W38,2000-W35/36,2000-W40,US eBay
+CG586896783,C/CGB-JPN-2,05,2-7,💛 Dandelion,D-0043,–,–,2000-W43,–,–,US eBay
+CG594303860,C/CGB-JPN-2,05,2-2,💛 Dandelion,–,J1-11-2000,520-3702,–,2000-W44/45,2000-W52,gbhwdb.gekkio.fi
+CG595691652,Missing,05,1-6,💚 Kiwi,D-0051,–,–,2000-W51,–,–,US eBay
+CG601336782,C/CGB-JPN-2,05,2-4,💟 Atomic purple,D-0051,J2-12-2000,021-3702,2000-W51,2000-W50/51,2001-W02,gbhwdb.gekkio.fi
+CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,812-3702,1998-W45,1998-W46/47,1998-W50,gbhwdb.gekkio.fi
+CH12159154,C/CGB-EUR,04,1-1,💜 Grape,C-9936,–,–,1999-W36,–,–,UK eBay
+CH15080008,C/CGB-EUR,04,4-1,💚 Kiwi,D-0017,J3-03-2000,–,2000-W17,2000-W12/13,–,GR @Matthaios-Bobolis #6
+CH15382743,Missing,04,1-1,🩵 Teal,D-0021,–,–,2000-W21,–,–,US eBay
+CH16096503,C/CGB-EUR,04,4-2,💛 Dandelion,D-0026,–,–,2000-W26,–,–,UK eBay
+CH16137820,C/CGB-EUR,04,1-1,💜 Grape,D-0026,J2-06-2000,280-3702,2000-W26,2000-W23/25,2000-W28,FR @ThibautPlg #5
+CH16904786,Missing,05,1-2,💟 Atomic purple,D-0029,–,–,2000-W29,–,–,US eBay
+CH18661294,Missing,05,?-?,💜 Grape,D-0037,–,–,2000-W37,–,–,AU eBay
+CH18787795,C/CGB-EUR,05,2-1,🩵 Teal,D-0038,J1-09-2000,410-3702,2000-W38,2000-W35/36,2000-W41,UK eBay
+CH20409368,C/CGB-EUR,05,2-6,🩵 Teal,D-0046,–,–,2000-W46,–,–,FR @3615Retro #3
+CH20811249,C/CGB-JPN-2,05,2-6,💟 Atomic purple,D-0047,J3-10-2000,490-8702,2000-W47,2000-W42/44,2000-W49,gbhwdb.gekkio.fi
+CH20983903,C/CGB-JPN-2,05,2-6,🩷 Berry,D-0049,J3-10-2000,490-3702,2000-W49,2000-W42/44,2000-W49,gbhwdb.gekkio.fi
+CH21633866,C/CGB-EUR,05,2-9,💛 Dandelion,D-0051,–,–,2000-W51,–,–,DE eBay
+CH22908987,C/CGB-JPN-2,05,1-5,🩷 Berry,D-0103,J2-12-2000,061-3702,2001-W03,2000-W50/51,2001-W06,US eBay
+CH23080280,Missing,05,?-?,💟 Atomic purple,D-0102,–,–,2001-W02,–,–,US eBay
+CH24224683,C/CGB-JPN-2,06,1-1,💟 Atomic purple,E-0140,J2-10-2001,451-3702,2001-W40,2001-W41/42,2001-W45,gbhwdb.gekkio.fi
+PD10035458,CGB-POB-JPN-1,04,5-2,🩶 SE Pokemon Center gold-silver,D-0017,–,–,2000-W17,–,–,JP eBay
+,,,,,,,,,,,
+,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025. 
+,,,,,,,,,,, This work is licensed under CC BY-NC-SA. See: 
+,,,,,,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ 
+,,,,,,,,,,, Provided “as is”- without warranty of any kind. 
+,,,,,,,,,,, (Release: 2025-12-14 / R04318) 
