@@ -17,16 +17,16 @@
 #
 # WARNING:
 #     May not be safe for public use; created for the author's benefit.
-#     Provided "as is", without warranty of any kind; see the
+#     Provided "as is", without warranty of any kind. See the
 #     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
 # Strict mode: immediately exit on error, an unset variable or pipe failure
 set -euo pipefail
 
-# Message decorations - colored for terminals with NO_COLOR unset
+# Message decorations - colored for terminals if NO_COLOR is unset
 ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
-[[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
+[[ -z "${NO_COLOR-}" && -t 2 && "${TERM-}" != dumb ]] \
   && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
 # Set POSIX locale for consistent byte-wise sorting and pattern matching
@@ -44,7 +44,7 @@ if [[ ! -r "$1" || ! "$1" =~ \.(csv|CSV)$ ]]; then
   echo "${ERR} A readable CSV file is required." >&2
   exit 1
 fi
-file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1" || echo 0)
+declare -i file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
 if (( file_size < 1024 || file_size > 2097152 )); then
   echo "${ERR} File size is outside the allowed range (1 KiB - 2 MiB)." >&2
   exit 1
@@ -56,7 +56,7 @@ echo "Processing: '$1' ..."
 
 # We use the number of entries (rows - 1x header) as a revision number `R01234`,
 #   for document version control and checking the input
-row_count=$(( $(wc -l < "$1") - 1 ))
+declare -i row_count=$(( $(wc -l < "$1") - 1 ))
 if (( row_count < 100 || row_count > 20000 )); then
   echo "${ERR} Row count is outside the allowed range (100 - 20k)." >&2
   exit 1
@@ -83,19 +83,14 @@ fi
 
 
 # Files to be created
-dir="$(dirname "${BASH_SOURCE[0]}")/.."
-readonly file_C="${dir}/gbc-census-C.csv"
-readonly file_CG="${dir}/gbc-census-CG.csv"
-readonly file_CH="${dir}/gbc-census-CH.csv"
-readonly file_X="${dir}/gbc-census-X.csv"
+root_dir="$(CDPATH= cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
+readonly file_C="${root_dir}/gbc-census-C.csv"
+readonly file_CG="${root_dir}/gbc-census-CG.csv"
+readonly file_CH="${root_dir}/gbc-census-CH.csv"
+readonly file_X="${root_dir}/gbc-census-X.csv"
 readonly files=("${file_C}" "${file_CG}" "${file_CH}" "${file_X}")
 # Temporary array buffers for each serial group, to reduce disk operations
-rows_C=()
-rows_CG=()
-rows_CH=()
-rows_POB=()
-rows_X=()
-
+declare -a rows_C rows_CG rows_CH rows_POB rows_X
 
 # Create each file with header rows
 for file in "${files[@]}"; do
@@ -160,7 +155,6 @@ date_year=$(date '+%Y')
 for file in "${files[@]}"; do
   {
     printf ',,,,,,\n'
-    # printf 'R%05u ,,,, %s-%u. ,,\n' "${row_count}" "${copyright}" "${date_year}"
     printf ',,,,,, %s-%u. \n' "${copyright}" "${date_year}"
     printf ',,,,,, This work is licensed under CC BY-NC-SA. See: \n'
     printf ',,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ \n'
@@ -171,7 +165,7 @@ done
 
 
 # Check output: Verify separate row counts match original total
-total_out_rows=0
+declare -i total_out_rows count
 for file in "${files[@]}"; do
   if [[ ! -r "${file}" ]]; then
     echo "${ERR} Output file is missing or unreadable: ${file}" >&2
@@ -194,7 +188,7 @@ if command -v 'yq' &> /dev/null; then
     yq -i '
       .version = strenv(VERSION) |
       .date-released = strenv(DATE)
-    ' "${dir}/CITATION.cff"
+    ' "${root_dir}/CITATION.cff"
 fi
 
 
