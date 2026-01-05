@@ -22,11 +22,13 @@ C10339903,CGB-EUR,Blank,1-2,💜 Grape,gbhwdb.gekkio.fi,2023-05-30
 C10340435,CGB-EUR,Blank,2-1,💜 Grape,UK eBay,2023-05-17
 C10342618,CGB-EUR,Blank,2-1,💜 Grape,gbhwdb.gekkio.fi,2023-05-30
 C10347304,CGB-EUR,Blank,1-2,💜 Grape,UK eBay,2024-12-05
+C10348113,CGB-EUR,Blank,1-?,💜 Grape,AU eBay,2026-01-05
 C10371089,CGB-JPN,Blank,3-2,💛 Dandelion,JP eBay,2023-04-14
 C10400331,CGB-JPN,Blank,5-1,🩷 Berry,gbhwdb.gekkio.fi,2023-05-30
 C10410000,CGB-JPN,Blank,5-1,🩷 Berry,gbhwdb.gekkio.fi,2023-05-30
 C10412198,CGB-JPN,Blank,1-2,🩷 Berry,JP eBay,2024-08-09
 C10427204,CGB-JPN,Blank,5-2,🩷 Berry,gbhwdb.gekkio.fi,2023-05-30
+C10432373,CGB-EUR,Blank,5-?,💜 Grape,DE eBay,2026-01-05
 C10471461,CGB-EUR,Blank,1-1,💜 Grape,DE eBay,2025-11-18
 C10526287,CGB-EUR,Blank,1-2,💜 Grape,UK eBay,2022-06-28
 C10530356,CGB-EUR,Blank,1-2,💜 Grape,UK eBay,2024-06-02
@@ -140,6 +142,7 @@ C11273233,CGB-JPN-1,"02",1-1,💟 Atomic purple,JP eBay,2024-08-05
 C11289529,CGB-JPN-1,"02",5-2,🩵 Teal,JP eBay,2024-08-09
 C11292262,CGB-JPN-1,"02",1-1,🩵 Teal,JP eBay,2024-08-10
 C11309125,CGB-EUR,?,?-?,💟 Atomic purple,UK eBay,2022-06-27
+C11314600,CGB-EUR,"02",3-2,💟 Atomic purple,DE eBay,2025-12-18
 C11359343,CGB-EUR,"02",5-2,💟 Atomic purple,UK eBay,2023-05-26
 C11361340,CGB-EUR,"02",1-2,💟 Atomic purple,UK eBay,2022-07-14
 C11363119,CGB-EUR,"02",1-1,💟 Atomic purple,UK eBay,2024-09-14
@@ -200,6 +203,7 @@ C11782610,CGB-JPN-1,"02",1-1,🩵 Teal,US eBay,2024-11-04
 C11789925,CGB-JPN-1,"02",1-1,🩵 Teal,JP eBay,2024-08-29
 C11802387,CGB-JPN-1,"02",1-2,💛 Dandelion,AU eBay,2025-01-02
 C11812501,CGB-JPN-1,"02",4-2,💛 Dandelion,JP eBay,2024-09-02
+C11816721,CGB-JPN-1,"02",1-1,💛 Dandelion,US eBay,2025-12-27
 C11875638,CGB-EUR,"02",1-1,💟 Atomic purple,DE eBay,2025-11-19
 C11890567,CGB-EUR,"02",1-1,💟 Atomic purple,UK eBay,2025-02-03
 C11946849,CGB-JPN-1,"02",4-1,💛 Dandelion,JP eBay,2024-07-27
@@ -221,6 +225,7 @@ C12061629,CGB-JPN-1,"02",1-2,🤍 Clear translucent,JP eBay,2024-09-04
 C12078075,CGB-JPN-1,"02",1-2,🤍 Clear translucent,US eBay,2024-11-17
 C12095135,CGB-EUR,"02",1-2,💟 Atomic purple,UK eBay,2022-07-31
 C12107247,CGB-JPN-1,"02",5-2,🤍 Clear translucent,JP eBay,2025-01-31
+C12109092,CGB-JPN-1,"02",1-1,🤍 Clear translucent,JP eBay,2026-01-05
 C12148272,CGB-JPN-1,"02",5-1,💟 Atomic purple,JP eBay,2025-11-26
 C12164266,CGB-JPN-1,"02",3-2,💜 Grape,JP eBay,2025-01-13
 C12170549,CGB-JPN-1,?,?-?,🩵 Teal,UK eBay,2022-06-27
@@ -233,6 +238,7 @@ C12353117,CGB-JPN-1,"03",1-1,🤍 Clear translucent,JP eBay,2024-07-18
 C12369323,CGB-JPN-1,"02",3-1,🤍 Clear translucent,US eBay,2024-08-27
 C12374374,CGB-JPN-1,"03",1-1,💙 SE Pokemon w/ Togepi yellow/blue 🥚,JP eBay,2024-07-17
 C12395884,CGB-EUR,"02",2-1,💜 Grape,US eBay,2025-10-24
+C12396459,CGB-EUR,"02",1-1,💜 Grape,DE eBay,2025-12-24
 C12473813,CGB-JPN-1,"02",1-1,🩷 Berry,JP eBay,2024-11-06
 C12474840,CGB-JPN-1,"02",2-2,🩷 Berry,JP eBay,2024-11-07
 C12480948,Missing,"03",4-2,🩷 Berry,US eBay,2024-11-04
@@ -249,9 +255,11 @@ C12514813,CGB-JPN-1,"02",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2024-07-
 C12514994,CGB-JPN-1,"02",1-2,🌸 SE Hello Kitty w/ flower pink,JP Sendico,2024-07-11
 C12515234,CGB-JPN-1,"02",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2024-11-17
 C12515478,CGB-JPN-1,"02",1-2,🌸 SE Hello Kitty w/ flower pink,JP eBay,2025-11-27
+C12516061,CGB-JPN-1,"02",1-2,🌸 SE Hello Kitty w/ flower pink,MX eBay,2025-12-21
 C12517326,CGB-JPN-1,"03",6-1,🌸 SE Hello Kitty w/ flower pink,US eBay,2025-11-17
 C12517542,CGB-JPN-1,"02",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2024-07-07
 C12519807,CGB-JPN-1,"03",1-2,🌸 SE Hello Kitty w/ flower pink,JP J4U,2025-06-02
+C12519808,CGB-JPN-1,"03",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2025-12-27
 C12520425,CGB-JPN-1,?,?-?,SE Panasonic Alkaline grape,JP eBay,2025-05-24
 C12520784,CGB-JPN-1,?,?-?,SE Panasonic Alkaline grape,US eBay,2024-09-02
 C12521243,CGB-JPN-1,"02",6-2,SE Panasonic Alkaline grape,AU eBay,2024-09-02
@@ -291,6 +299,7 @@ C12590695,CGB-JPN-1,"02",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2025-06-
 C12590707,CGB-JPN-1,"03",1-1,🌸 SE Hello Kitty w/ flower pink,JP eBay,2024-11-13
 C12591164,CGB-JPN-1,?,?-?,🌸 SE Hello Kitty w/ flower pink,JP eBay,2024-11-01
 C12592107,CGB-JPN-1,"02",1-2,🌸 SE Hello Kitty w/ flower pink,US eBay,2025-12-01
+C12592666,CGB-JPN-1,"03",1-2,🌸 SE Hello Kitty w/ flower pink,US eBay,2025-12-27
 C12592941,CGB-JPN-1,"03",1-2,🌸 SE Hello Kitty w/ flower pink,JP eBay,2025-01-02
 C12595451,CGB-JPN-1,"02",6-2,🌸 SE Hello Kitty w/ flower pink,JP J4U,2025-06-03
 C12611395,CGB-JPN-1,"02",1-1,💟 Atomic purple,JP eBay,2025-12-04
@@ -317,6 +326,7 @@ C13001170,CGB-JPN-1,"03",4-2,💜 Grape,JP eBay,2024-08-22
 C13004260,CGB-JPN-1,"03",?-?,💜 Grape,JP eBay,2024-10-26
 C13046508,CGB-JPN-1,"03",?-1,💟 Atomic purple,JP eBay,2024-08-30
 C13218829,CGB-JPN-1,"03",1-1,💟 Atomic purple,JP eBay,2024-08-22
+C13247908,CGB-JPN-1,"04",?-2,💜 Grape,AU eBay,2025-12-21
 C13255325,CGB-JPN-1,"03",1-2,💟 Atomic purple,CA eBay,2025-12-04
 C13308242,CGB-EUR,"03",1-2,💟 Atomic purple,DE eBay,2025-06-06
 C13320230,CGB-JPN-1,"03",1-2,💜 Grape,JP eBay,2024-12-23
@@ -365,6 +375,7 @@ C14174667,CGB-JPN-1,"03",4-2,🩷 Berry,JP eBay,2024-08-10
 C14213342,CGB-JPN-1,"03",1-2,💟 Atomic purple,JP eBay,2024-11-07
 C14215636,CGB-JPN-1,"03",1-2,💟 Atomic purple,JP eBay,2024-08-29
 C14256083,CGB-JPN-1,"03",1-2,🩵 Teal,UK eBay,2024-08-16
+C14256339,CGB-JPN-1,"04",1-2,SE Doraemon 20th Anniv' teal,JP eBay,2025-12-19
 C14257751,CGB-JPN-1,?,?-1,SE Doraemon 20th Anniv' teal,JP eBay,2024-11-20
 C14281581,CGB-JPN-1,"03",1-2,💛 Dandelion,US eBay,2025-05-30
 C14319052,CGB-JPN-1,"03",1-2,💜 Grape,JP eBay,2025-01-31
@@ -396,6 +407,7 @@ C14709957,CGB-JPN-1,"03",2-1,💜 Grape,US eBay,2024-08-23
 C14745986,CGB-JPN-1,"03",1-1,💜 Grape,JP eBay,2024-12-16
 C14758961,CGB-JPN-1,"03",1-1,🩷 Berry,JP eBay,2024-08-29
 C14838777,CGB-JPN-1,"03",10-2,💟 Atomic purple,JP eBay,2024-08-14
+C14864950,CGB-JPN-1,"03",10-1,✈️ SE ANA translucent blue,JP eBay,2025-12-28
 C14865251,CGB-JPN-1,"03",1-2,✈️ SE ANA translucent blue,JP eBay,2024-08-13
 C14865511,CGB-JPN-1,"03",1-2,✈️ SE ANA translucent blue,US eBay,2025-10-21
 C14866056,CGB-JPN-1,"05",2-4,✈️ SE ANA translucent blue,UK eBay,2024-05-30
@@ -473,6 +485,7 @@ C15255169,Missing,"03",8-2,🩵 Teal,UK eBay,2024-07-15
 C15256216,CGB-EUR,"03",10-2,🩵 Teal,UK eBay,2023-05-27
 C15260670,CGB-EUR,"03",2-2,💚 Kiwi,UK eBay,2024-12-08
 C15260695,CGB-EUR,"03",2-1,💚 Kiwi,UK eBay,2025-01-04
+C15263441,CGB-EUR,"03",8-2,💚 Kiwi,AU eBay,2026-01-05
 C15264886,CGB-EUR,"03",1-2,💚 Kiwi,UK eBay,2022-08-14
 C15281693,CGB-EUR,"03",1-1,💛 Dandelion,UK eBay,2024-04-22
 C15318676,CGB-EUR,"03",6-1,💚 Kiwi,DE eBay,2025-06-05
@@ -512,9 +525,11 @@ C15653305,CGB-POB-JPN-1,"03",11-1,💙 SE Pokemon w/ Meowth yellow/blue 😼,AU 
 C15684600,CGB-EUR,"03",3-1,💚 Kiwi,DE eBay,2025-11-19
 C15758374,CGB-EUR,"03",1-1,💟 Atomic purple,UK eBay,2025-05-30
 C15846571,CGB-JPN-1,"03",6-2,💙 SE Pokemon w/ Togepi yellow/blue 🥚,JP eBay,2024-12-20
+C15876585,CGB-JPN-1,"03",4-1,💜 Grape,US eBay,2026-01-04
 C15877221,CGB-JPN-1,"03",6-1,💜 Grape,JP eBay,2024-09-12
 C15877319,CGB-JPN-1,"03",?-1,💜 Grape,US eBay,2024-09-01
 C15888158,CGB-JPN-1,"03",7-1,🩷 Berry,UK eBay,2022-07-14
+C15892726,CGB-JPN-1,"03",1-2,🤍 Clear translucent,US eBay,2025-12-29
 C15895024,CGB-JPN-1,"03",4-2,🤍 Clear translucent,JP eBay,2024-11-06
 C15908612,CGB-JPN-1,"03",1-1,🤍 Clear translucent,JP eBay,2024-08-06
 C15944617,CGB-JPN-1,"03",1-1,💟 Atomic purple,JP eBay,2024-08-30
@@ -536,7 +551,8 @@ C16079088,Missing,"03",6-2,🤍 Clear translucent,US eBay,2025-11-18
 C16118890,CGB-JPN-1,"03",1-2,🤍 Clear translucent,JP eBay,2024-11-14
 C16124620,CGB-JPN-1,"03",1-1,🩵 Teal,JP eBay,2024-09-03
 C16133436,CGB-JPN-1,"04",3-1,💟 Atomic purple,US eBay,2024-08-27
-C16144355,CGB-JPN-1,03?,1-2,💛 Dandelion,UK eBay,2022-08-16
+C16144355,CGB-JPN-1,"03",1-2,💛 Dandelion,UK eBay,2022-08-16
+C16146830,CGB-JPN-1,"03",6-1,💛 Dandelion,AU eBay,2025-12-21
 C16157168,CGB-JPN-1,"03",1-1,💜 Grape,JP eBay,2025-01-22
 C16162055,CGB-JPN-1,"03",1-2,💜 Grape,JP eBay,2024-08-30
 C16172737,CGB-POB-JPN-1,"03",1-2,💙 SE Pokemon w/ Meowth yellow/blue 😼,AU eBay,2024-09-16
@@ -551,6 +567,7 @@ C16223368,CGB-JPN-1,"03",1-2,SE Daiei Hawks translucent orange/black,JP eBay,202
 C16223846,CGB-JPN-1,?,?-?,SE Daiei Hawks translucent orange/black,UK eBay,2024-12-05
 C16225208,CGB-JPN-1,"04",1-1,SE Daiei Hawks translucent orange/black,JP eBay,2024-08-11
 C16225280,CGB-JPN-1,"03",𝟙-1,SE Daiei Hawks translucent orange/black,JP eBay,2024-11-15
+C16226784,CGB-JPN-1,"03",1-2,SE Daiei Hawks translucent orange/black,JP eBay,2025-12-21
 C16227041,CGB-JPN-1,?,𝟚-1,SE Daiei Hawks translucent orange/black,JP eBay,2024-11-27
 C16227050,CGB-JPN-1,"03",1-2,SE Daiei Hawks translucent orange/black,JP eBay,2024-12-20
 C16227150,CGB-JPN-1,"03",?-?,SE Daiei Hawks translucent orange/black,US Marketplace,2025-03-26
@@ -659,6 +676,7 @@ C16982334,CGB-JPN-1,"04",1-1,💜 Grape,JP eBay,2025-01-13
 C16993969,CGB-JPN-1,"04",1-1,🩵 Teal,JP eBay,2022-07-26
 C17003305,CGB-JPN-1,"04",6-1,🩵 Teal,JP eBay,2024-08-30
 C17039822,CGB-JPN-1,"04",1-1,💟 Atomic purple,JP eBay,2024-08-10
+C17040522,CGB-JPN-1,"04",1-1,💟 Atomic purple,US eBay,2025-12-27
 C17046407,CGB-JPN-1,"04",5-2,💟 Atomic purple,JP eBay,2024-11-06
 C17056073,CGB-JPN-1,"04",1-2,🤍 Clear translucent,JP eBay,2024-10-26
 C17057964,CGB-JPN-1,"04",6-1,🤍 Clear translucent,JP eBay,2024-08-05
@@ -667,6 +685,7 @@ C17070405,CGB-JPN-1,"04",1-2,🩷 Berry,JP eBay,2024-11-17
 C17079675,CGB-JPN-1,"04",1-2,🩷 Berry,US eBay,2025-11-30
 C17090112,CGB-JPN-1,"04",1-2,💛 Dandelion,US eBay,2024-09-09
 C17097200,CGB-JPN-1,"04",2-2,🤍 Clear translucent,JP eBay,2024-09-14
+C17115772,CGB-JPN-1,"04",3-2,🩵 Teal,DE eBay,2025-12-24
 C17117181,CGB-JPN-1,"04",3-2,🩵 Teal,US eBay,2025-12-04
 C17132066,CGB-JPN-1,"04",1-1,🩷 Berry,JP eBay,2024-08-09
 C17144357,CGB-JPN-1,"04",6-2,💟 Atomic purple,JP eBay,2024-09-12
@@ -697,6 +716,7 @@ C17339207,CGB-JPN-1,"04",1-2,💟 Atomic purple,JP eBay,2024-09-01
 C17343903,CGB-JPN-1,"04",?-?,🤍 Clear translucent,JP eBay,2024-08-09
 C17351055,CGB-JPN-1,"03",3-2,SE Daiei Hawks translucent orange/black,AU eBay,2025-05-28
 C17357361,CGB-JPN-1,"04",1-1,🩵 Teal,JP eBay,2024-09-08
+C17387808,CGB-JPN-1,"04",1-2,🤍 Clear translucent,US eBay,2025-12-19
 C17421431,CGB-JPN-1,"04",2-2,💜 Grape,JP eBay,2024-08-05
 C17432250,CGB-JPN-1,"04",5-2,💜 Grape,JP eBay,2024-08-09
 C17433736,CGB-JPN-1,"04",?-2,💜 Grape,US eBay,2025-06-06
@@ -719,6 +739,7 @@ C17539783,CGB-POB-JPN-1,"04",2-2,💙 SE Pokemon w/ Meowth yellow/blue 😼,AU e
 C17541149,CGB-JPN-1,"04",1-2,💜 Grape,JP eBay,2024-12-19
 C17541747,CGB-JPN-1,"04",1-2,💜 Grape,UK eBay,2024-11-17
 C17542576,CGB-JPN-1,"04",9-2,💜 Grape,JP eBay,2024-08-29
+C17545785,CGB-JPN-1,"04",1-2,💜 Grape,US eBay,2026-01-05
 C17558252,CGB-JPN-1,"04",1-2,🤍 Clear translucent,US eBay,2025-10-07
 C17560350,CGB-JPN-1,"04",6-1,🤍 Clear translucent,JP eBay,2024-09-10
 C17568853,CGB-JPN-1,"04",1-1,🤍 Clear translucent,JP eBay,2022-08-17
@@ -769,6 +790,7 @@ C17800447,CGB-JPN-1,"04",1-1,💟 Atomic purple,JP eBay,2024-11-17
 C17800458,CGB-JPN-1,"04",?-2,💟 Atomic purple,JP eBay,2024-09-12
 C17800610,CGB-JPN-1,"04",?-2,💟 Atomic purple,UK eBay,2024-12-05
 C17802016,CGB-JPN-1,"04",1-2,💟 Atomic purple,JP eBay,2024-09-12
+C17809053,CGB-JPN-1,"04",1-1,💟 Atomic purple,US eBay,2025-12-18
 C17813757,CGB-JPN-1,"04",1-?,💟 Atomic purple,US eBay,2024-07-18
 C17813769,Missing,"04",1-2,💟 Atomic purple,JP eBay,2024-09-12
 C17841491,CGB-JPN-1,"04",1-1,🤍 Clear translucent,FR eBay,2025-06-18
@@ -845,9 +867,11 @@ C18215243,CGB-JPN-1,"04",1-2,💜 Grape,JP eBay,2024-08-10
 C18216923,CGB-JPN-1,"04",1-2,💜 Grape,JP eBay,2025-01-13
 C18217872,CGB-JPN-1,"04",6-1,💜 Grape,JP eBay,2025-01-09
 C18237112,CGB-JPN-1,"04",?-2,🩵 Teal,JP eBay,2024-08-29
+C18243626,CGB-JPN-1,"04",5-1,💛 Dandelion,US eBay,2025-12-21
 C18286485,CGB-JPN-1,"04",1-1,💟 Atomic purple,US eBay,2025-10-07
 C18288161,CGB-JPN-1,"04",1-1,💟 Atomic purple,JP eBay,2024-07-27
 C18299802,CGB-JPN-1,"04",1-1,🩷 Berry,JP eBay,2025-05-31
+C18317501,CGB-JPN-1,"04",1-2,🤍 Clear translucent,US eBay,2025-12-15
 C18324249,CGB-JPN-1,"04",1-2,💛 Dandelion,DE eBay,2025-06-06
 C18325941,CGB-JPN-1,"04",1-2,💛 Dandelion,US eBay,2025-06-06
 C18326169,CGB-JPN-1,"04",1-2,💛 Dandelion,JP eBay,2024-11-04
@@ -889,6 +913,7 @@ C18583302,CGB-JPN-1,"04",4-2,💟 Atomic purple,AU eBay,2025-12-09
 C18612277,CGB-JPN-1,"04",3-2,💚 Kiwi,AU eBay,2024-12-26
 C18620887,CGB-JPN-1,"04",3-2,🩵 Teal,JP eBay,2024-07-22
 C18625989,CGB-JPN-1,"04",1-1,🤍 Clear translucent,JP eBay,2024-09-10
+C18629657,CGB-JPN-1,"04",1-1,🤍 Clear translucent,AU eBay,2025-12-27
 C18643250,CGB-JPN-1,"04",1-1,🩷 Berry,JP eBay,2024-10-26
 C18647723,Missing,"04",1-1,🩷 Berry,US eBay,2025-11-12
 C18652624,CGB-JPN-1,"04",4-1,💛 Dandelion,JP eBay,2022-08-14
@@ -960,6 +985,7 @@ C19097392,CGB-JPN-1,"04",5-2,💛 Dandelion,JP eBay,2024-11-24
 C19101392,CGB-JPN-1,"04",5-1,🤍 Clear translucent,UK eBay,2024-05-04
 C19107194,CGB-JPN-1,"04",12-1,SE Toys'R'Us translucent midnight blue-purple,US eBay,2025-11-30
 C19107517,CGB-JPN-1,"04",?-1,SE Toys'R'Us translucent midnight blue-purple,JP eBay,2025-11-12
+C19107649,CGB-JPN-1,"04",2-1,SE Toys'R'Us translucent midnight blue-purple,DE eBay,2026-01-05
 C19110084,CGB-JPN-1,"04",6-1,🩷 Berry,JP eBay,2024-11-04
 C19113083,CGB-JPN-1,"04",10-2,🩷 Berry,JP eBay,2025-11-11
 C19122747,CGB-JPN-1,"04",8-2,💜 Grape,US eBay,2025-11-12
@@ -986,6 +1012,7 @@ C19220030,CGB-JPN-1,"04",1-1,🤍 Clear translucent,gbhwdb.gekkio.fi,2023-05-30
 C19222786,CGB-JPN-1,"04",5-2,💜 Grape,JP eBay,2025-05-28
 C19229158,CGB-JPN-1,"04",1-2,💟 Atomic purple,UK eBay,2024-11-09
 C19229749,Replica,?,?-?,SE Ozzie! translucent green/yellow,UK eBay,2024-08-04
+C19263005,CGB-JPN-1,"04",1-2,🩵 Teal,US eBay,2025-12-28
 C19263392,CGB-JPN-1,"04",11-1,🩵 Teal,JP eBay,2024-09-12
 C19286171,CGB-JPN-1,"04",1-2,💟 Atomic purple,JP eBay,2025-05-28
 C19298201,CGB-JPN-1,"04",1-1,🩷 Berry,JP eBay,2024-08-30
@@ -1136,6 +1163,8 @@ C19657623,CGB-JPN-1,?,?-?,💜 Grape,UK eBay,2022-06-28
 C19657960,CGB-JPN-2,"04",1-2,💜 Grape,JP eBay,2024-11-06
 C19658985,CGB-JPN-2,"04",1-1,💜 Grape,JP eBay,2024-08-22
 C19661993,Replica,"04",1-1,SE Ozzie! translucent green/yellow,DE eBay,2025-06-18
+C19662056,CGB-JPN-2,"04",1-2,SE Ozzie! translucent green/yellow,AU eBay,2026-01-05
+C19663137,CGB-JPN-2,"04",4-1,SE Ozzie! translucent green/yellow,JP eBay,2025-12-22
 C19663396,CGB-JPN-2,"04",3-2,SE Ozzie! translucent green/yellow,AU eBay,2025-07-23
 C19669712,CGB-JPN-2,"04",2-1,SE Ozzie! translucent green/yellow,AU eBay,2025-12-07
 C19669839,CGB-JPN-2,?,4-2,SE Ozzie! translucent green/yellow,AU eBay,2024-11-06
@@ -1192,11 +1221,14 @@ C19850509,CGB-JPN-2,"05",3-1,❄️ SE translucent ice blue,US eBay,2025-11-28
 C19851603,CGB-JPN-2,"05",9-2,❄️ SE translucent ice blue,JP J4U,2025-06-03
 C19852815,CGB-JPN-2,"05",12-1,❄️ SE translucent ice blue,UK eBay,2025-01-21
 C19852956,CGB-JPN-2,"04",1-2,❄️ SE translucent ice blue,JP Hakushin,2024-07-09
+C19853896,CGB-JPN-2,"05",9-1,❄️ SE translucent ice blue,JP eBay,2025-12-24
 C19854015,CGB-JPN-2,"05",1-2,❄️ SE translucent ice blue,JP eBay,2024-11-20
 C19854050,CGB-JPN-2,"05",1-2,❄️ SE translucent ice blue,JP eBay,2025-05-27
 C19857407,CGB-JPN-2,"05",2-2,❄️ SE translucent ice blue,US eBay,2024-12-24
 C19859381,CGB-JPN-2,"05",2-?,❄️ SE translucent ice blue,AU eBay,2024-11-10
+C19860470,CGB-JPN-2,"05",9-1,❄️ SE translucent ice blue,US eBay,2026-01-05
 C19861991,CGB-JPN-2,"05",1-1,❄️ SE translucent ice blue,JP Hakushin,2024-07-09
+C19863427,CGB-JPN-2,"05",?-?,❄️ SE translucent ice blue,JP eBay,2025-12-24
 C19863572,CGB-JPN-2,"05",3-2,❄️ SE translucent ice blue,US eBay,2024-07-28
 C19866677,CGB-JPN-2,"05",5-1,❄️ SE translucent ice blue,JP J4U,2024-09-06
 C19868375,CGB-JPN-2,"05",1-1,❄️ SE translucent ice blue,AU eBay,2024-08-30
@@ -1217,6 +1249,7 @@ C20000163,CGB-JPN-2,"05",1-2,💜 Grape,JP eBay,2024-07-30
 C20021673,CGB-JPN-2,"05",1-2,💜 Grape,UK eBay,2022-07-18
 C20024752,Missing,"05",4-1,💜 Grape,US eBay,2025-05-27
 C20024764,CGB-JPN-2,"05",2-2,💜 Grape,JP eBay,2022-08-13
+C20026681,Missing,"05",5-2,💜 Grape,JP eBay,2025-12-17
 C20038891,CGB-EUR,"05",4-1,💛 Dandelion,DE eBay,2025-11-18
 C20055379,CGB-EUR,"05",1-2,💟 Atomic purple,UK eBay,2024-11-30
 C20059292,CGB-EUR,"05",8-1,💟 Atomic purple,DE eBay,2025-11-26
@@ -1297,6 +1330,7 @@ C20660020,CGB-JPN-2,"05",5-2,SE Daiei Hawks translucent orange/black,JP eBay,202
 C20660135,CGB-JPN-2,"05",1-1,SE Daiei Hawks translucent orange/black,UK eBay,2024-08-13
 C20661006,CGB-JPN-2,"05",?-2,SE Daiei Hawks translucent orange/black,JP J4U,2024-09-07
 C20662267,CGB-JPN-2,"05",1-2,SE Daiei Hawks translucent orange/black,JP J4U,2024-09-06
+C20662323,CGB-JPN-2,"05",6-?,SE Daiei Hawks translucent orange/black,JP eBay,2025-12-27
 C20662933,CGB-JPN-2,"05",6-2,SE Daiei Hawks translucent orange/black,JP J4U,2024-09-06
 C20663309,CGB-JPN-2,"05",2-1,SE Daiei Hawks translucent orange/black,JP eBay,2024-08-10
 C20664724,CGB-JPN-2,?,?-?,SE Daiei Hawks translucent orange/black,US eBay,2024-08-15
@@ -1353,6 +1387,7 @@ C20809171,CGB-JPN-2,"05",?-?,🖤 SE Eiden translucent black,JP eBay,2024-09-08
 C20809719,CGB-JPN-2,"05",6-1,🖤 SE Eiden translucent black,JP eBay,2024-07-13
 C20819567,CGB-JPN-2,"05",4-1,SE Toys'R'Us translucent midnight blue-purple,JP eBay,2025-06-19
 C20834111,CGB-JPN-2,"05",3-2,💟 Atomic purple,JP eBay,2024-07-27
+C20835392,CGB-JPN-2,"05",8-2,💟 Atomic purple,US eBay,2025-12-16
 C20842043,CGB-JPN-2,"05",5-2,🩵 Teal,JP eBay,2024-09-12
 C20842945,CGB-JPN-2,"05",11-1,🩵 Teal,JP eBay,2024-08-09
 C20852759,CGB-JPN-2,"05",5-2,🩷 Berry,JP eBay,2024-07-30
@@ -1447,6 +1482,7 @@ C21420654,CGB-JPN-2,"06",1-1,🩵 Teal,JP eBay,2024-09-02
 C21427022,CGB-JPN-2,"06",12-1,🍊 SE Mirinda translucent orange,US eBay,2024-09-04
 C21428136,Missing,"06",1-2,🍊 SE Mirinda translucent orange,DE eBay,2025-12-04
 C21430979,CGB-JPN-2,"06",1-2,🩵 Teal,JP eBay,2023-04-15
+C21434643,CGB-JPN-2,"06",1-2,🩷 Berry,US eBay,2025-12-31
 C21453602,CGB-JPN-2,"06",1-2,💛 Dandelion,JP eBay,2024-07-27
 C21456477,CGB-JPN-2,"06",1-1,💛 Dandelion,JP eBay,2025-11-26
 C21456790,CGB-JPN-2,"06",10-1,💛 Dandelion,UK eBay,2024-04-22
@@ -1501,8 +1537,8 @@ C21823885,CGB-JPN-2,"06",6-2,💛 Dandelion,UK eBay,2023-03-25
 C21824998,Missing,"06",10-1,💛 Dandelion,JP eBay,2022-08-16
 C21864258,CGB-EUR,?,?-?,💛 Dandelion,DE eBay,2025-06-18
 ,,,,,,
-,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025. 
+,,,,,, Copyright (C) Andrew C.E. Dent 2022-2026. 
 ,,,,,, This work is licensed under CC BY-NC-SA. See: 
 ,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ 
 ,,,,,, Provided “as is”- without warranty of any kind. 
-,,,,,, (Release: 2025-12-14 / R04318) 
+,,,,,, (Release: 2026-01-05 / R04617) 
