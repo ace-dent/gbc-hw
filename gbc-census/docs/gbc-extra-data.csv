@@ -10,6 +10,7 @@ C11204491,CGB-JPN-1,Blank,4-2,🩵 Teal,B-9841,J2-09-1998,428-2240,1998-W41,1998
 C11778414,CGB-JPN-1,02,1-1,🩵 Teal,B-9845,J1-10-1998,468-0030,1998-W45,1998-W40/41,1998-W46,gbhwdb.gekkio.fi
 C13374257,CGB-JPN-1,03,1-2,💟 Atomic purple,B-9850,J2-11-1998,518-2217,1998-W50,1998-W46/47,1998-W51,AU eBay
 C13780256,CGB-JPN-1,03,1-1,🤍 Clear translucent,B-9852,J2-12-1998,–,1998-W52,1998-W50/51,–,US eBay
+C15876585,CGB-JPN-1,03,4-1,💜 Grape,C-9931,J3-06-1999,329-1243,1999-W31,1999-W25/26,1999-W32,US eBay
 C16416396,CGB-JPN-1,04,1-1,💟 Atomic purple,C-9939,J3-08-1999,409-1243,1999-W39,1999-W33/35,1999-W40,gbhwdb.gekkio.fi
 C16430148,CGB-JPN-1,04,1-2,💛 Dandelion,C-9940,J1-10-1999,449-0701,1999-W40,1999-W39/40,1999-W44,AU eBay
 C17541747,CGB-JPN-1,04,1-2,💜 Grape,–,J3-11-1999,030-1900,–,1999-W46/48,2000-W03,UK eBay
@@ -22,6 +23,7 @@ C20522758,CGB-JPN-2,05,?-2,SE Toys'R'Us translucent green,D-0048,–,–,2000-W4
 C20544825,CGB-JPN-2,05,2-5,🩷 Berry,D-0047,J2-11-2000,–,2000-W47,2000-W45/47,–,US eBay
 C21117841,CGB-JPN-2,05,9-1,💛 Dandelion,D-0049,J3-10-2000,500-2033,2000-W49,2000-W42/44,2000-W50,US eBay
 C21518015,CGB-JPN-2,06,5-1,💟 Atomic purple,E-0052,J2-12-2000,031-2240,2000-W52,2000-W50/51,2001-W03,gbhwdb.gekkio.fi
+,,,,,,,,,,,
 CG100048933,CGB-JPN,Blank,1-2,💜 Grape,0-9832,J3-08-1998,378-2033,1998-W32,1998-W34/36,1998-W37,gbhwdb.gekkio.fi
 CG103672838,CGB-JPN-1,Blank,1-2,💟 Atomic purple,B-9840,J2-09-1998,438-2240,1998-W40,1998-W37/38,1998-W43,gbhwdb.gekkio.fi
 CG106445125,CGB-JPN-1,02,1-1,💟 Atomic purple,B-9844,J2-10-1998,458-2033,1998-W44,1998-W41/43,1998-W45,US eBay
@@ -35,14 +37,17 @@ CG159260164,CGB-JPN-1,04,1-2,🩵 Teal,D-0017,–,–,2000-W17,–,–,US eBay
 CG161643696,CGB-JPN-2,04,11-1,🩵 Teal,D-0021,–,–,2000-W21,–,–,US eBay
 CG163285177,CGB-JPN-2,04,1-2,🩵 Teal,D-0022,J2-05-2000,230-3419,2000-W22,2000-W19/20,2000-W23,gbhwdb.gekkio.fi
 CG166834785,CGB-JPN-2,04,5-1,💟 Atomic purple,D-0026,J2-05-2000,280-0701,2000-W26,2000-W19/20,2000-W28,US YouTube
+,,,,,,,,,,,
 CG514888705,C/CGB-JPN-1,03,2-2,🩵 Teal,C-9917,–,–,1999-W17,–,–,US eBay
 CG550297110,C/CGB-JPN-1,04,2-2,💚 Kiwi,C-0005,J2-01-2000,090-3702,2000-W05,2000-W02/03,2000-W09,US @tlayne
+CG565563019,C/CGB-JPN-2,04,3-2,💚 Kiwi,D-0022,J3-04-2000,240-3702,2000-W22,2000-W16/17,2000-W24,US eBay
 CG577638088,C/CGB-JPN-2,05,2-8,💜 Grape,D-0038,J1-09-2000,400-3702,2000-W38,2000-W35/36,2000-W40,US eBay
 CG586896783,C/CGB-JPN-2,05,2-7,💛 Dandelion,D-0043,–,–,2000-W43,–,–,US eBay
 CG594303860,C/CGB-JPN-2,05,2-2,💛 Dandelion,–,J1-11-2000,520-3702,–,2000-W44/45,2000-W52,gbhwdb.gekkio.fi
 CG595691652,Missing,05,1-6,💚 Kiwi,D-0051,–,–,2000-W51,–,–,US eBay
 CG601336782,C/CGB-JPN-2,05,2-4,💟 Atomic purple,D-0051,J2-12-2000,021-3702,2000-W51,2000-W50/51,2001-W02,gbhwdb.gekkio.fi
-CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,812-3702,1998-W45,1998-W46/47,1998-W50,gbhwdb.gekkio.fi
+,,,,,,,,,,,
+CH10038566,C/CGB-JPN-1,02,1-2,💟 Atomic purple,B-9845,J2-11-1998,812-3702,1998-W45,1998-W46/47,1998-W49/53,gbhwdb.gekkio.fi
 CH12159154,C/CGB-EUR,04,1-1,💜 Grape,C-9936,–,–,1999-W36,–,–,UK eBay
 CH15080008,C/CGB-EUR,04,4-1,💚 Kiwi,D-0017,J3-03-2000,–,2000-W17,2000-W12/13,–,GR @Matthaios-Bobolis #6
 CH15382743,Missing,04,1-1,🩵 Teal,D-0021,–,–,2000-W21,–,–,US eBay
@@ -58,10 +63,11 @@ CH21633866,C/CGB-EUR,05,2-9,💛 Dandelion,D-0051,–,–,2000-W51,–,–,DE eB
 CH22908987,C/CGB-JPN-2,05,1-5,🩷 Berry,D-0103,J2-12-2000,061-3702,2001-W03,2000-W50/51,2001-W06,US eBay
 CH23080280,Missing,05,?-?,💟 Atomic purple,D-0102,–,–,2001-W02,–,–,US eBay
 CH24224683,C/CGB-JPN-2,06,1-1,💟 Atomic purple,E-0140,J2-10-2001,451-3702,2001-W40,2001-W41/42,2001-W45,gbhwdb.gekkio.fi
+,,,,,,,,,,,
 PD10035458,CGB-POB-JPN-1,04,5-2,🩶 SE Pokemon Center gold-silver,D-0017,–,–,2000-W17,–,–,JP eBay
 ,,,,,,,,,,,
-,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2025. 
+,,,,,,,,,,, Copyright (C) Andrew C.E. Dent 2022-2026. 
 ,,,,,,,,,,, This work is licensed under CC BY-NC-SA. See: 
 ,,,,,,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ 
 ,,,,,,,,,,, Provided “as is”- without warranty of any kind. 
-,,,,,,,,,,, (Release: 2025-12-14 / R04318) 
+,,,,,,,,,,, (Release: 2026-01-05 / R04617) 
