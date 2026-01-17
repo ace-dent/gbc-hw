@@ -49,10 +49,10 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 
 | Style | Regions | Comment |
 | :---- | :------ | :------ |
-| `🍒 SE Sakura Wars translucent cherry` | JP | series: [`C`](../gbc-census-C.csv). |
-| `🍊 SE Mirinda translucent orange` | MX | series: [`C`](../gbc-census-C.csv). |
-| `🍊 SE Yedigun translucent orange` | TR | series: [`C`](../gbc-census-C.csv). |
-| `SE Ozzie! translucent green/yellow` | AU, NZ | series: [`C`](../gbc-census-C.csv). |
+| `🍒 SE Sakura Wars translucent cherry` | JP | 2000, series: [`C`](../gbc-census-C.csv). |
+| `🍊 SE Mirinda translucent orange` | MX, Europe | series: [`C`](../gbc-census-C.csv). |
+| `🍊 SE Yedigun translucent orange` | TR | 2001, series: [`C`](../gbc-census-C.csv). |
+| `SE Ozzie! translucent green/yellow` | AU, NZ | 2000, series: [`C`](../gbc-census-C.csv). |
 | `✈️ SE ANA translucent blue` | JP | series: [`C`](../gbc-census-C.csv). |
 | `SE Jusco w/ Mario atomic purple` | JP | series: [`C`](../gbc-census-C.csv). |
 | `SE Jusco w/ Mario clear translucent` | JP | series: [`C`](../gbc-census-C.csv). |
@@ -66,9 +66,9 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `SE Toys'R'Us translucent green` | JP | series: [`C`](../gbc-census-C.csv). |
 | `💧 SE transparent water blue` | SG, MY, ID | series: [`CH`](../gbc-census-CH.csv). |
 | `SE Tsutaya translucent blue, yellow buttons` | JP | series: [`C`](../gbc-census-C.csv). |
-| `❄️ SE translucent ice blue` | JP, AU | series: [`C`](../gbc-census-C.csv). |
+| `❄️ SE translucent ice blue` | JP, AU | 1999, series: [`C`](../gbc-census-C.csv). |
 | `SE Lawson translucent blue/clear` | JP | series: [`C`](../gbc-census-C.csv). |
-| `SE Toys'R'Us translucent midnight blue-purple` | JP | series: [`C`](../gbc-census-C.csv). |
+| `SE Toys'R'Us translucent midnight blue-purple` | JP | 1999, series: [`C`](../gbc-census-C.csv). |
 | `🖤 SE Eiden translucent black` | JP | series: [`C`](../gbc-census-C.csv). |
 
 
