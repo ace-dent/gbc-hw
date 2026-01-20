@@ -12,11 +12,14 @@ Thank you for your interest in contributing to this project! 🌱
 ## Contributor License Agreement (CLA)
 
 By submitting content to this project, you agree that:
-- You own the submitted material, or have the full rights to share it;
-- You grant the project maintainers the right to use, modify, reproduce, and distribute your submission as part of the project, under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0);
-- You understand and accept that your submission may be incorporated into the project and made publicly available under this license;
-- You waive any claim to compensation or further control over how your submission is used within the project;
-- You have read and understood the terms of the project's license.
+
+1. **You have rights to contribute.** You own the submitted material or have the full rights and permissions to share it and to grant the licenses below.
+2. **You keep ownership.** You retain copyright (and any other rights you may have) in your submission.
+3. **You grant the Project Owner broad permission.** You grant the project owner (and their successors/assignees) a perpetual, worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, distribute, publicly display/perform, create derivative works from, and otherwise exploit your submission **for any purpose, including commercial purposes**.
+4. **Relicensing and sublicensing are allowed.** You agree the project owner may sublicense and/or relicense your submission and derivative works under **any** terms (including proprietary terms), and may include your submission in other projects or products.
+5. **Database rights (if applicable).** To the extent your submission is protected by database rights (including _sui generis_ database rights), you grant the project owner the same license over those rights.
+6. **No compensation; no control.** You waive any claim to compensation for your submission and agree you will not assert claims to control the project owner’s use or licensing of it consistent with this CLA.
+7. **Public project license.** You understand that the project is currently shared publicly under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, and that the project owner may also offer the project (including your submission) under different licenses now or in the future.
 
 
 ## Code of Conduct
