@@ -5,7 +5,7 @@
 The census collects the following information for each device:
 
 - **Serial number** – The unique alphanumeric identifier for each device, labelled on the rear of the unit (e.g. `CH12345678`). It is the _key_ for the census by which data is sorted. 
-- **Production** – The production code on the larger rear label (e.g. `C/CGB-EUR`). This can provide information on _where_ the device was produced (e.g. `C/` for China), _when_ (e.g. `-2`), or indicates a _special edition_ (e.g. `-POB`). Marked as 'Missing' when it is not clearly visible or absent. Reproduction labels are marked as a 'Replica', when detected.
+- **Production** – The production code on the large rear label (e.g. `C/CGB-EUR`). This can provide information on _where_ the device was produced (e.g. `C/` for China), _when_ (e.g. `-2`), or indicates a _special edition_ (e.g. `-POB`). Marked as 'Missing' when it is not clearly visible or absent. Reproduction labels are marked as a 'Replica', when detected.
 - **PCB #** – PCB revision number with leading zero: `02` to `06`, or `Blank` (for `СGВ-СРU-01` boards). Printed under the lower-left battery terminal. It indicates what CPU stepping may be present in the device.
 - **Panel (A-B)** – The two hyphen-separated numbers on the PCB, below the revision (e.g. `1-2`). These silk-screened numbers identify the individual PCB panel, used for traceability during manufacturing. If a digit is unclear, it is marked with `?`. The occasional printing errors observed, are replicated with double-struck digits `𝟙`, `𝟚`, etc. (Unicode characters U+1D7D8–E1).
 - **Shell** – The design style of the shell (details [here](gbc-shells.md)).
@@ -31,12 +31,12 @@ Much of the time and effort is devoted to ensuring the accuracy of the data set.
 Sampling progress toward the census target, shown by serial range:
 
 ```text
-C   —  64% ▕████████████████         ▏  1537 / 2400
-CG1 —  36% ▕█████████                ▏   583 / 1600
-CG5 —  37% ▕█████████▎               ▏   904 / 2400
-CH  —  47% ▕███████████▊             ▏  1428 / 3000
+C   —  68% ▕█████████████████        ▏  1639 / 2400
+CG1 —  42% ▕██████████▌              ▏   679 / 1600
+CG5 —  43% ▕██████████▊              ▏  1051 / 2400
+CH  —  49% ▕████████████▎            ▏  1486 / 3000
 
-All —  46% ▕███████████▌             ▏  4617 / 10k
+All —  50% ▕████████████▌            ▏  5026 / 10k
 ```
 
 
@@ -46,10 +46,10 @@ While international coverage continues to expand, some regional bias may persist
 
 ```mermaid
 pie title Source regions
-    "UK" : 30
+    "US" : 37
     "JP" : 25
-    "US" : 35
-    "Other" : 10
+    "UK" : 27
+    "Other" : 11
 ```
 
 <hr>
@@ -60,6 +60,7 @@ pie title Source regions
 Releases are identified by a revision number (e.g. `R01234`), which corresponds to the cumulative row count and reflects the dataset size. Milestone releases are archived with [Zenodo](https://doi.org/10.5281/zenodo.17886467).
 
 ```text
+2026-01-26, R05026
 2026-01-05, R04617
 2025-12-14, R04318
 2025-12-02, R04092
