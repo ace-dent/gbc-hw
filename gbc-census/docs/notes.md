@@ -31,12 +31,12 @@ Much of the time and effort is devoted to ensuring the accuracy of the data set.
 Sampling progress toward the census target, shown by serial range:
 
 ```text
-C   —  68% ▕█████████████████        ▏  1639 / 2400
-CG1 —  42% ▕██████████▌              ▏   679 / 1600
-CG5 —  43% ▕██████████▊              ▏  1051 / 2400
-CH  —  49% ▕████████████▎            ▏  1486 / 3000
+C   —  73% ▕██████████████████▎      ▏  1765 / 2400
+CG1 —  50% ▕████████████▌            ▏   802 / 1600
+CG5 —  53% ▕█████████████▎           ▏  1277 / 2400
+CH  —  52% ▕█████████████            ▏  1571 / 3000
 
-All —  50% ▕████████████▌            ▏  5026 / 10k
+All —  55% ▕█████████████▊           ▏  5586 / 10k
 ```
 
 
@@ -46,10 +46,11 @@ While international coverage continues to expand, some regional bias may persist
 
 ```mermaid
 pie title Source regions
-    "US" : 37
-    "JP" : 25
-    "UK" : 27
+    "US" : 40
+    "JP" : 24
+    "UK" : 25
     "Other" : 11
+    %% (percentage of total)
 ```
 
 <hr>
@@ -60,6 +61,7 @@ pie title Source regions
 Releases are identified by a revision number (e.g. `R01234`), which corresponds to the cumulative row count and reflects the dataset size. Milestone releases are archived with [Zenodo](https://doi.org/10.5281/zenodo.17886467).
 
 ```text
+2026-03-07, R05586
 2026-01-26, R05026
 2026-01-05, R04617
 2025-12-14, R04318

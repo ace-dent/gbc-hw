@@ -1,7 +1,6 @@
 Serial number,Production,PCB #,Panel (A-B),Shell,Source,Date
 POB 00350,CGB-POB-JPN,"03",1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-12-06
 POB 00481,CGB-POB-JPN,?,1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,US eBay,2024-09-10
-POB 00924,CGB-POB-JPN,?,?-?,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-10-31
 POB 00974,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-11-11
 POB 02006,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,US YouTube,2025-03-15
 POB 02036,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2025-01-19
@@ -26,6 +25,7 @@ POB 16947,Missing,?,3-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,20
 POB 18116,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2025-12-21
 POB 18384,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2025-11-22
 POB 18990,CGB-POB-JPN,"03",1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-11-08
+POB 19411,CGB-POB-JPN,"03",1-1,🧡 SE Pokemon Center 3rd Anniv' orange/blue,FR eBay,2026-03-03
 POB 19454,CGB-POB-JPN,"03",1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-12-06
 POB 19492,CGB-POB-JPN,"03",1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2025-10-23
 POB 19765,CGB-POB-JPN,"03",1-2,🧡 SE Pokemon Center 3rd Anniv' orange/blue,JP eBay,2024-12-23
@@ -62,7 +62,6 @@ CWP 05249,CGB-CWP-JPN,"04",1-2,💮 SE Cardcaptor Sakura white/pink,JP eBay,2024
 CWP 05930,CGB-CWP-JPN,"04",5-2,💮 SE Cardcaptor Sakura white/pink,JP eBay,2025-09-16
 CWP 06269,CGB-CWP-JPN,"04",1-1,💮 SE Cardcaptor Sakura white/pink,JP eBay,2024-08-14
 CWP 07556,CGB-CWP-JPN,"04",1-1,💮 SE Cardcaptor Sakura white/pink,JP eBay,2024-07-10
-CWP 07583,CGB-CWP-JPN,?,?-1,💮 SE Cardcaptor Sakura white/pink,JP Hakushin,2024-07-09
 CWP 07713,CGB-CWP-JPN,"04",1-1,💮 SE Cardcaptor Sakura white/pink,JP eBay,2024-08-14
 CWP 08036,CGB-CWP-JPN,"04",1-1,💮 SE Cardcaptor Sakura white/pink,JP eBay,2024-11-30
 CWP 08095,CGB-CWP-JPN,"04",1-2,💮 SE Cardcaptor Sakura white/pink,UK eBay,2024-07-12
@@ -82,6 +81,7 @@ PD10002005,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,202
 PD10003304,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP J4U,2024-09-06
 PD10004384,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,2024-08-02
 PD10004752,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP J4U,2025-06-04
+PD10005607,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,DE eBay,2026-03-03
 PD10006339,CGB-POB-JPN-1,"04",2-1,🩶 SE Pokemon Center gold-silver,JP eBay,2024-07-17
 PD10006864,CGB-POB-JPN-1,"04",6-1,🩶 SE Pokemon Center gold-silver,JP eBay,2025-10-08
 PD10008324,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP eBay,2025-12-31
@@ -109,11 +109,11 @@ PD10021813,CGB-POB-JPN-1,"04",3-1,🩶 SE Pokemon Center gold-silver,JP eBay,202
 PD10022270,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP eBay,2024-12-20
 PD10022642,CGB-POB-JPN-1,"04",4-2,🩶 SE Pokemon Center gold-silver,JP eBay,2024-12-24
 PD10022882,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP eBay,2026-01-02
+PD10022921,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,2026-03-03
 PD10025762,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,2024-08-15
 PD10026109,CGB-POB-JPN-1,"04",2-2,🩶 SE Pokemon Center gold-silver,JP J4U,2024-09-06
 PD10026665,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP eBay,2025-11-25
 PD10027123,CGB-POB-JPN-1,"04",1-2,🩶 SE Pokemon Center gold-silver,JP eBay,2024-12-06
-PD10027644,CGB-POB-JPN-1,?,?-?,🩶 SE Pokemon Center gold-silver,JP eBay,2024-08-09
 PD10027819,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,2024-11-08
 PD10028587,CGB-POB-JPN-1,"04",6-2,🩶 SE Pokemon Center gold-silver,JP eBay,2025-12-23
 PD10030164,CGB-POB-JPN-1,"04",1-1,🩶 SE Pokemon Center gold-silver,JP eBay,2025-01-11
@@ -157,4 +157,4 @@ PD10049592,CGB-POB-JPN-2,"05",4-1,🩶 SE Pokemon Center gold-silver,JP eBay,202
 ,,,,,, This work is licensed under CC BY-NC-SA. See:
 ,,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/
 ,,,,,, Provided “as is”- without warranty of any kind.
-,,,,,, (Release: 2026-01-26 / R05026)
+,,,,,, (Release: 2026-03-07 / R05586)
