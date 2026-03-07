@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# SPDX-FileCopyrightText: © 2024 Andrew C.E. Dent <hi@aced.cafe>
+# SPDX-FileCopyrightText: 2024 Andrew C.E. Dent <hi@aced.cafe>
 #
 # -----------------------------------------------------------------------------
 # Usage:
@@ -50,7 +50,7 @@ if (( file_size < 1024 || file_size > 2097152 )); then
   exit 1
 fi
 
-echo ''
+echo
 echo "Processing: '$1' ..."
 
 
@@ -68,16 +68,16 @@ readonly row_z='2024-10-31,POB 24237,CGB-POB-JPN,'
 first_data_row=$(sed -n '2p' "$1") # Read second line, skipping the header
 # Determine last data row, accounting for potential blank final line
 last_data_row=$(tail -n1 "$1")
-if [[ -z "${last_data_row//[[:space:]]/}" ]]; then
-  # Skip the blank footer line and read penultimate row (n-1)
+if [[ -z "${last_data_row//[[:space:],]/}" ]]; then
+  # Skip the blank line and read the penultimate row
   last_data_row=$(sed -n "${row_count}p" "$1")
 fi
 if [[ "${first_data_row}" != ${row_a}* ]]; then
-  echo "${ERR} First row of data doesn't begin with: '${row_a}'." >&2
+  echo "${ERR} First row of data does not match: '${row_a}'." >&2
   exit 1
 fi
 if [[ "${last_data_row}" != ${row_z}* ]]; then
-  echo "${ERR} Last row of data doesn't begin with: '${row_z}'." >&2
+  echo "${ERR} Last row of data does not match: '${row_z}'." >&2
   exit 1
 fi
 
@@ -101,6 +101,11 @@ done
 
 # Place each CSV row into the correct serial group, skipping the header
 while IFS=, read -r date serial production pcb other_columns; do
+  if [[ -z "${date//[[:space:]]/}" ]]; then
+    echo "${WARN} Skipped an empty row." >&2
+    (( row_count -= 1 ))
+    continue
+  fi
   # Enclose PCB numbers `,0n,` in double quotes `,"0n",` (n=2-6),
   #   to ensure they are treated as text fields when importing the CSV
   if [[ "${pcb}" =~ ^0[2-6]$ ]]; then
@@ -130,7 +135,7 @@ while IFS=, read -r date serial production pcb other_columns; do
     *)
       # Ignore BR distributor Gradiente Entertainment: 123456789A1B
       # Ignore: AU12345678
-      echo "${WARN} skipped '${row}'" >&2
+      echo "${WARN} Skipped '${row}'." >&2
       ;;
   esac
 done < <(tail -n +2 "$1")
@@ -147,19 +152,20 @@ printf '%s\n' "${rows_CH[@]}" >> "${file_CH}"
 
 
 # Add the version and copyright notice in the footer
-readonly copyright='Copyright (C) Andrew C.E. Dent 2022'
+printf -v revision 'R%05u' "${row_count}"
+readonly revision copyright='Copyright (C) Andrew C.E. Dent 2022'
 # Get the current date formatted as YYYY-MM-DD (ISO 8601) and the year YYYY
 date_full=$(date '+%F')
-date_year=$(date '+%Y')
+date_year="${date_full:0:4}"
 # Append footer to file(s)
 for file in "${files[@]}"; do
   {
     printf ',,,,,,\n'
-    printf ',,,,,, %s-%u. \n' "${copyright}" "${date_year}"
-    printf ',,,,,, This work is licensed under CC BY-NC-SA. See: \n'
-    printf ',,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/ \n'
-    printf ',,,,,, Provided “as is”- without warranty of any kind. \n'
-    printf ',,,,,, (Release: %s / R%05u) \n' "${date_full}" "${row_count}"
+    printf ',,,,,, %s-%u.\n' "${copyright}" "${date_year}"
+    printf ',,,,,, This work is licensed under CC BY-NC-SA. See:\n'
+    printf ',,,,,, https://creativecommons.org/licenses/by-nc-sa/4.0/\n'
+    printf ',,,,,, Provided “as is”- without warranty of any kind.\n'
+    printf ',,,,,, (Release: %s / %s)\n' "${date_full}" "${revision}"
   } >> "${file}"
 done
 
@@ -168,23 +174,23 @@ done
 declare -i total_out_rows count
 for file in "${files[@]}"; do
   if [[ ! -r "${file}" ]]; then
-    echo "${ERR} Output file is missing or unreadable: ${file}" >&2
+    echo "${ERR} Output file is not readable: ${file}." >&2
     exit 1
   fi
   count=$(( $(wc -l < "${file}") -1 -6 )) # Subtract header and footer rows
   total_out_rows=$(( total_out_rows + count ))
 done
 if (( total_out_rows != row_count )); then
-  echo "${ERR} Total output rows (${total_out_rows}) does not match input (${row_count})!" >&2
+  echo "${ERR} Output ${total_out_rows} rows does not match input ${row_count}." >&2
   exit 1
 else
-  echo "${row_count} rows split into corresponding CSV files."
+  echo "${row_count} rows split into ${#files[@]} corresponding CSV files."
 fi
 
 
 # Optionally update CITATION.cff yaml file with the release details
 if command -v 'yq' &> /dev/null; then
-  env VERSION="R0${row_count}" DATE="${date_full}" \
+  env VERSION="${revision}" DATE="${date_full}" \
     yq -i '
       .version = strenv(VERSION) |
       .date-released = strenv(DATE)
@@ -193,5 +199,5 @@ fi
 
 
 echo " ...Finished! ${DONE}"
-echo ''
+echo
 exit 0
