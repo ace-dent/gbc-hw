@@ -1,17 +1,16 @@
-# Contributor guide
+# Contributing
 
-Thank you for your interest in contributing to this project! 🌱
-
+Thanks for your interest in contributing! 🌱  
+This project documents Game Boy Color hardware, and community contributions help make the dataset more complete and accurate.
 
 ## How to contribute
 
 - To submit device data or photographs for the census, please open a new Issue using the '[Add your device](https://github.com/ace-dent/gbc-hw/issues/new?template=census--add-your-device.md)' template and complete the checklist.
 - For code, documentation or general improvements, feel free to open an Issue to discuss any ideas before submitting a Pull Request.
 
-
 ## Contributor License Agreement (CLA)
 
-By submitting content to this project, you agree that:
+To ensure the project can be maintained and distributed in the future, contributions are accepted under the following terms:
 
 1. **You have rights to contribute.** You own the submitted material or have the full rights and permissions to share it and to grant the licenses below.
 2. **You keep ownership.** You retain copyright (and any other rights you may have) in your submission.
@@ -21,12 +20,11 @@ By submitting content to this project, you agree that:
 6. **No compensation; no control.** You waive any claim to compensation for your submission and agree you will not assert claims to control the project owner’s use or licensing of it consistent with this CLA.
 7. **Public project license.** You understand that the project is currently shared publicly under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, and that the project owner may also offer the project (including your submission) under different licenses now or in the future.
 
-
 ## Code of Conduct
 
 Please be respectful and constructive. 
 
-All contributors are expected to follow our [Code of Conduct](./CODE_OF_CONDUCT.md). In short: Let's keep being awesome to each other! 🙏
+All contributors are expected to follow our [Code of Conduct](./CODE_OF_CONDUCT.md). In short: let's keep being awesome to each other! 🙏
 
 
 <hr>
