@@ -20,7 +20,7 @@ I welcome feedback and suggestions, to continue improving the project for everyo
 
 Thanks to @Gekkio for the Game Boy hardware database ([gbhwdb](https://gbhwdb.gekkio.fi)).  
 
-Special thanks to all our [contributors](https://github.com/ace-dent/gbc-hw/graphs/contributors), including: @3615Retro, @Matthaios-Bobolis, @sarspants, @ThibautPlg, @tlayne and more! 🙌  
+Special thanks to all our [contributors](https://github.com/ace-dent/gbc-hw/graphs/contributors), including: @3615Retro, @Matthaios-Bobolis, @MKatwood, @msinger, @sarspants, @ThibautPlg, @tlayne and more! 🙌  
 
 
 ## Legal
