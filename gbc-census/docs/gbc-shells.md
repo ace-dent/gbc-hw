@@ -27,7 +27,7 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `💙 SE Pokemon w/ Meowth yellow/blue 😼` | AU, NZ | 1999, series: [`C`](../gbc-census-C.csv). |
 | `💙 SE Pokemon w/ Pichu yellow/blue ⚡️` | Europe | 2001, series: [`CH`](../gbc-census-CH.csv). |
 | `🩶 SE Pokemon w/ Pichu gold-silver ⚡️` | Americas, AU, NZ | 2001, series: [`CG`](../gbc-census-CG.csv), [`CH`](../gbc-census-CH.csv). |
-| `SE Pokemon w/ Meowth translucent blue/white` |  HK | 1999, series: [`CH`](../gbc-census-CH.csv). |
+| `SE Pokemon w/ Meowth translucent blue/white` | HK | 1999, series: [`CH`](../gbc-census-CH.csv). |
 | `SE Pokemon w/ Meowth translucent green/white` | TW | 1999, series: [`C`](../gbc-census-C.csv). |
 | `🧡 SE Pokemon Center 3rd Anniv' orange/blue` | JP | 1999, series: [`POB`](../gbc-census-X.csv). |
 | `🩶 SE Pokemon Center gold-silver` | JP | 1999, series: [`PD`](../gbc-census-X.csv). |
@@ -41,6 +41,8 @@ Common shell colors and Special Editions (SE) are recognized in the census, with
 | `🎀 SE Hello Kitty w/ bow pink` | JP | 2000, series: [`C`](../gbc-census-C.csv). |
 | `💮 SE Cardcaptor Sakura white/pink` | JP | 2000, series: [`CWP`](../gbc-census-X.csv). |
 | `SE Tommy Hilfiger yellow` | N.America | 1999, series: [`CG`](../gbc-census-CG.csv). |
+| `SE CoroCoro 250th Anniv' yellow` | JP | 1999, series: [`C`](../gbc-census-C.csv). |
+| `🧛 SE Kraft Lunchables yellow` | DE | 2000, series: [`CH`](../gbc-census-CH.csv). |
 | `SE Doraemon 20th Anniv' teal` | JP | 2000, series: [`C`](../gbc-census-C.csv). |
 | `SE Panasonic Alkaline grape` | JP | 1999, series: [`C`](../gbc-census-C.csv). |
 
